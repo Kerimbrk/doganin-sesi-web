@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Leaf } from 'lucide-react';
 import './Header.css';
@@ -9,10 +10,22 @@ import tubitakLogo from '../../assets/images/logos/tubitak.png';
 import bilsemLogo from '../../assets/images/logos/soma_bilsem_optimized.png';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const getNavClassName = ({ isActive }) => `nav-link${isActive ? ' active' : ''}`;
 
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 24);
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header className="site-header glass-panel">
+    <header className={`site-header glass-panel${isScrolled ? ' is-scrolled' : ''}`}>
       <div className="header-top">
         <div className="header-showcase">
           <div className="logo-box logo-box-side">
