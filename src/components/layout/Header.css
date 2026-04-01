@@ -178,11 +178,10 @@
 
 @media (max-width: 960px) {
   .site-header {
+    position: relative;
+    top: auto;
+    z-index: 20;
     margin: 0.45rem 0.6rem 0.7rem;
-  }
-
-  .site-header.is-scrolled .header-top {
-    display: none;
   }
 
   .header-top {
@@ -211,10 +210,6 @@
     padding: 0.7rem 0.85rem 0.8rem;
   }
 
-  .site-header.is-scrolled .header-bottom {
-    padding-top: 0.55rem;
-  }
-
   .main-nav {
     width: 100%;
     flex-wrap: wrap;
@@ -226,7 +221,7 @@
 
 @media (max-width: 640px) {
   .site-header {
-    top: 0.2rem;
+    margin: 0.35rem 0.5rem 0.6rem;
   }
 
   .project-title {
