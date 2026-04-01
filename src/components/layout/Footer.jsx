@@ -1,5 +1,6 @@
 import './Footer.css';
 import './Logos.css';
+import { useLanguage } from '../../context/useLanguage';
 
 // Logo Imports
 import logoKaymakamlik from '../../assets/images/logos/soma_kaymakamlik_optimized.png';
@@ -12,41 +13,43 @@ import logoOrman from '../../assets/images/logos/soma_orman_optimized.png';
 import logoSaglik from '../../assets/images/logos/soma_saglik.png';
 
 const institutions = [
-  { name: 'Soma Kaymakamlığı', src: logoKaymakamlik },
-  { name: 'Balıkesir Üniversitesi', src: logoUni },
-  { name: 'Soma Belediyesi', src: logoBelediye },
-  { name: 'Doğa Koruma ve Milli Parklar', src: logoDKMP },
-  { name: 'Soma İlçe Milli Eğitim Md.', src: logoMEB },
-  { name: 'Spil Dağı Milli Parkı', src: logoSpil },
-  { name: 'Soma Orman İşletme Md.', src: logoOrman },
-  { name: 'Soma İlçe Sağlık Md.', src: logoSaglik },
+  { src: logoKaymakamlik },
+  { src: logoUni },
+  { src: logoBelediye },
+  { src: logoDKMP },
+  { src: logoMEB },
+  { src: logoSpil },
+  { src: logoOrman },
+  { src: logoSaglik },
 ];
 
 const Footer = () => {
+  const { copy } = useLanguage();
+
   return (
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-logos">
-          <h4>Destekleyen Kurum ve Kuruluşlar</h4>
+          <h4>{copy.footer.title}</h4>
           <div className="logo-grid">
             {institutions.map((inst, index) => (
               <div key={index} className="footer-logo-box">
                 <img 
                   src={inst.src} 
-                  alt={inst.name} 
+                  alt={copy.footer.institutions[index]} 
                   className="footer-inst-logo" 
                   loading="lazy"
                   decoding="async"
                   onError={(e) => e.target.style.display='none'}
                 />
-                <span className="footer-logo-text-fallback">{inst.name}</span>
+                <span className="footer-logo-text-fallback">{copy.footer.institutions[index]}</span>
               </div>
             ))}
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2026 Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek I. TÜBİTAK 4004 Projesi.</p>
+          <p>{copy.footer.copyright}</p>
         </div>
       </div>
     </footer>

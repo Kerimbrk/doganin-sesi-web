@@ -1,62 +1,49 @@
 import './About.css';
 import { Target, Users, BookOpen, Globe } from 'lucide-react';
+import { useLanguage } from '../context/useLanguage';
 
 const About = () => {
+  const { copy } = useLanguage();
+
   return (
     <div className="about-page">
       <div className="about-hero">
-        <h1>Projemiz Hakkında</h1>
-        <p>İklim değişikliği ile mücadelede farkındalığı yüksek bir nesil yetiştirmek için yola çıkıyoruz.</p>
+        <h1>{copy.about.heroTitle}</h1>
+        <p>{copy.about.heroDescription}</p>
       </div>
 
       <div className="about-content">
         <section className="about-section glass-panel">
           <div className="section-header">
             <Target className="section-icon" />
-            <h2>Projemizin Amacı</h2>
+            <h2>{copy.about.sections.purpose.title}</h2>
           </div>
-          <p>
-            TÜBİTAK 4004 Doğa Eğitimi ve Bilim Okulları Destekleme Programı kapsamında hazırlanan 
-            &quot;Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek&quot; projesinin temel amacı,
-            katılımcı öğrencilerin küresel iklim değişikliği ve doğa üzerindeki etkileri hakkında bilimsel bilgi 
-            birikimlerini artırmaktır. Proje, fen, sanat ve felsefeyi bir araya getirerek doğayı farklı bir 
-            gözle görmelerini sağlamayı hedeflemektedir.
-          </p>
+          <p>{copy.about.sections.purpose.body}</p>
         </section>
 
         <section className="about-section glass-panel">
           <div className="section-header">
             <Users className="section-icon" />
-            <h2>Hedef Kitle</h2>
+            <h2>{copy.about.sections.audience.title}</h2>
           </div>
-          <p>
-            Projemizin hedef kitlesi, Manisa ilindeki devlet okullarında öğrenim gören, özellikle kırsal alanlarda 
-            (köy okullarında) yaşayan dezavantajlı öğrenciler ile Bilim ve Sanat Merkezi&apos;ne (BİLSEM) devam eden 
-            <strong> 7. sınıf</strong> öğrencilerinden oluşan toplam 36 kişilik bir gruptur. Bu sayede farklı sosyo-ekonomik 
-            altyapılardan gelen öğrencilerin kaynaşması ve ortak bir çevre bilinci geliştirmeleri amaçlanmaktadır.
-          </p>
+          <p>{copy.about.sections.audience.body}</p>
         </section>
 
         <section className="about-section glass-panel">
           <div className="section-header">
             <BookOpen className="section-icon" />
-            <h2>Eğitim Yaklaşımımız</h2>
+            <h2>{copy.about.sections.approach.title}</h2>
           </div>
-          <p>
-            5 günlük yoğun kamp süresince, öğrenciler ezberci bir eğitim yerine; aktif katılım, gözlem, ölçüm, 
-            ve tartışma (P4C - Çocuklar İçin Felsefe) tekniklerinin kullanıldığı, disiplinlerarası (fen bilimleri, görsel sanatlar, felsefe vb.) 
-            bir doğa eğitimi programı ile buluşacaklardır. Eğitimler; Spil Dağı, Kozak Yaylası, Kırkağaç Çam Korusu ve 
-            Sevişler Baraj Gölü olmak üzere Manisa&apos;nın dört farklı ekosisteminde gerçekleştirilecektir.
-          </p>
+          <p>{copy.about.sections.approach.body}</p>
         </section>
 
         <section className="about-section glass-panel highlight-section">
           <div className="section-header">
             <Globe className="section-icon" />
-            <h2>Manifestomuz</h2>
+            <h2>{copy.about.sections.manifesto.title}</h2>
           </div>
           <blockquote>
-            &quot;Ekolojik krizin bir parçası olmak yerine, çözümün bir parçası olabiliriz. Bugünün doğa kaşifleri, yarının sürdürülebilir dünyasının elçileri olacak.&quot;
+            &quot;{copy.about.sections.manifesto.quote}&quot;
           </blockquote>
         </section>
       </div>

@@ -3,30 +3,32 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, CalendarDays, Leaf, MapPin, Users } from 'lucide-react';
 import './Home.css';
 import heroImage from '../assets/images/hero_banner.jpg';
+import { useLanguage } from '../context/useLanguage';
 
 const Home = () => {
-  const targetDateLabel = '29 Haziran 2026';
+  const { language, copy } = useLanguage();
+  const targetDateLabel = copy.home.targetDateLabel;
   const programCards = [
     {
-      title: 'Proje Hakkında',
-      description: 'Amaç, hedef kitle ve eğitim yaklaşımımızı kısa ve anlaşılır biçimde inceleyin.',
+      title: copy.home.cards[0].title,
+      description: copy.home.cards[0].description,
       icon: BookOpen,
       link: '/hakkimizda',
-      cta: 'Detayları İncele',
+      cta: copy.home.cards[0].cta,
     },
     {
-      title: 'Etkinlik Takvimi',
-      description: '5 günlük kamp akışını, saha çalışmalarını ve atölye planını adım adım görün.',
+      title: copy.home.cards[1].title,
+      description: copy.home.cards[1].description,
       icon: CalendarDays,
       link: '/program',
-      cta: 'Takvimi Aç',
+      cta: copy.home.cards[1].cta,
     },
     {
-      title: 'Başvuru ve Kayıt',
-      description: 'Katılım şartlarını öğrenin, belgeleri inceleyin ve başvuru formuna ulaşın.',
+      title: copy.home.cards[2].title,
+      description: copy.home.cards[2].description,
       icon: Users,
       link: '/basvuru',
-      cta: 'Başvuruya Git',
+      cta: copy.home.cards[2].cta,
     },
   ];
 
@@ -64,40 +66,38 @@ const Home = () => {
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-overlay">
           <div className="hero-content glass-panel">
-            <div className="hero-kicker">Sevgili öğrencilerimiz ve öğretmenlerimiz</div>
-            <h1>Doğanın Sesi</h1>
-            <h2>İklim Değişikliğini Anlamak ve Öğrenmek I</h2>
-            <p>Doğa eğitimi, bilim, sanat ve ekolojik okuryazarlığı bir araya getiren bu kamp portalında proje içeriğini, takvimi ve başvuru adımlarını tek yerden keşfedin.</p>
+            <div className="hero-kicker">{copy.home.heroKicker}</div>
+            <h1>{copy.home.heroTitle}</h1>
+            <h2>{copy.home.heroSubtitle}</h2>
+            <p>{copy.home.heroDescription}</p>
             <div className="countdown">
-              <span className="countdown-label">Kamp Başlangıcına Kalan:</span>
+              <span className="countdown-label">{copy.home.countdownLabel}</span>
               <div className="countdown-timer">
                 <div className="countdown-item">
                   <span className="num">{timeLeft.days}</span>
-                  <span className="label">Gün</span>
+                  <span className="label">{copy.home.countdownUnits.days}</span>
                 </div>
                 <div className="countdown-item">
                   <span className="num">{timeLeft.hours}</span>
-                  <span className="label">Saat</span>
+                  <span className="label">{copy.home.countdownUnits.hours}</span>
                 </div>
                 <div className="countdown-item">
                   <span className="num">{timeLeft.minutes}</span>
-                  <span className="label">Dak</span>
+                  <span className="label">{copy.home.countdownUnits.minutes}</span>
                 </div>
                 <div className="countdown-item">
                   <span className="num">{timeLeft.seconds}</span>
-                  <span className="label">Sn</span>
+                  <span className="label">{copy.home.countdownUnits.seconds}</span>
                 </div>
               </div>
-              <span className="countdown-date">{targetDateLabel} tarihinde başlıyor</span>
+              <span className="countdown-date">{language === 'en' ? `${copy.home.countdownDateSuffix} ${targetDateLabel}` : `${targetDateLabel} ${copy.home.countdownDateSuffix}`}</span>
             </div>
             <div className="hero-highlights">
-              <span>36 öğrenci</span>
-              <span>5 gün</span>
-              <span>4 ekosistem</span>
+              {copy.home.highlights.map((item) => <span key={item}>{item}</span>)}
             </div>
             <div className="hero-actions">
-              <Link to="/basvuru" className="btn-primary">Başvuru Şartları</Link>
-              <Link to="/program" className="btn-secondary">Etkinlik Programı</Link>
+              <Link to="/basvuru" className="btn-primary">{copy.home.actions.application}</Link>
+              <Link to="/program" className="btn-secondary">{copy.home.actions.program}</Link>
             </div>
           </div>
         </div>
@@ -126,25 +126,25 @@ const Home = () => {
       <section className="content-showcase">
         <div className="container showcase-grid">
           <article className="showcase-card feature-story glass-panel">
-            <span className="section-kicker">Mutlaka Göz Atın</span>
-            <h3>Disiplinlerarası doğa eğitimi ile sahada öğrenme</h3>
-            <p>Fen, sanat ve felsefeyi bir araya getiren kamp yapımız sayesinde öğrenciler yalnızca bilgi edinmiyor; gözlem yapıyor, tartışıyor ve üretiyor.</p>
+            <span className="section-kicker">{copy.home.feature.kicker}</span>
+            <h3>{copy.home.feature.title}</h3>
+            <p>{copy.home.feature.description}</p>
             <div className="showcase-meta">
-              <span><Leaf size={16} /> Spil Dağı ve Kozak Yaylası</span>
-              <span><Users size={16} /> 7. sınıf öğrencileri</span>
+              <span><Leaf size={16} /> {copy.home.feature.meta[0]}</span>
+              <span><Users size={16} /> {copy.home.feature.meta[1]}</span>
             </div>
-            <Link to="/hakkimizda" className="showcase-button">Program Yaklaşımını İncele</Link>
+            <Link to="/hakkimizda" className="showcase-button">{copy.home.feature.cta}</Link>
           </article>
 
           <article className="showcase-card literacy-card glass-panel">
-            <span className="section-kicker">Ekolojik Okuryazarlık</span>
-            <h3>Çocuklarla iklim değişikliğini konuşmanın yaratıcı yolları</h3>
-            <p>Katılımcılar iklim krizini korku diliyle değil; keşif, merak, bilimsel düşünme ve ortak sorumluluk duygusuyla ele alacak bir öğrenme deneyimi yaşayacak.</p>
+            <span className="section-kicker">{copy.home.literacy.kicker}</span>
+            <h3>{copy.home.literacy.title}</h3>
+            <p>{copy.home.literacy.description}</p>
             <blockquote>
-              “Bugünün doğa kaşifleri, yarının sürdürülebilir dünyasının elçileri olacak.”
+              “{copy.home.literacy.quote}”
             </blockquote>
             <Link to="/ekibimiz" className="text-link">
-              Eğitmen Kadrosunu Gör
+              {copy.home.literacy.cta}
               <ArrowRight size={16} />
             </Link>
           </article>
@@ -154,22 +154,22 @@ const Home = () => {
       <section className="calendar-section">
         <div className="container calendar-grid">
           <article className="calendar-card glass-panel">
-            <span className="section-kicker">Doğa Takvimi</span>
-            <h3>29 Haziran - 3 Temmuz 2026</h3>
-            <p>Kamp; Soma BİLSEM, Sevişler Baraj Gölü, Kırkağaç Çam Korusu, Kozak Yaylası ve Spil Dağı&apos;nda gerçekleşecek etkinliklerle ilerler.</p>
+            <span className="section-kicker">{copy.home.calendar.kicker}</span>
+            <h3>{copy.home.calendar.title}</h3>
+            <p>{copy.home.calendar.description}</p>
             <div className="calendar-highlights">
-              <span><CalendarDays size={16} /> 25 etkinlik</span>
-              <span><MapPin size={16} /> 5 farklı uygulama alanı</span>
+              <span><CalendarDays size={16} /> {copy.home.calendar.highlights[0]}</span>
+              <span><MapPin size={16} /> {copy.home.calendar.highlights[1]}</span>
             </div>
-            <Link to="/program" className="showcase-button">Takvimin Tamamını Aç</Link>
+            <Link to="/program" className="showcase-button">{copy.home.calendar.cta}</Link>
           </article>
 
           <article className="calendar-card contact-cta glass-panel">
-            <span className="section-kicker">Bize Ulaşın</span>
-            <h3>Sorularınız için proje ekibimiz burada</h3>
-            <p>Başvuru koşulları, takvim ve içerik hakkında daha fazla bilgi almak için iletişim sayfasından bize ulaşabilirsiniz.</p>
+            <span className="section-kicker">{copy.home.contact.kicker}</span>
+            <h3>{copy.home.contact.title}</h3>
+            <p>{copy.home.contact.description}</p>
             <Link to="/iletisim" className="text-link">
-              İletişim Bilgilerine Git
+              {copy.home.contact.cta}
               <ArrowRight size={16} />
             </Link>
           </article>

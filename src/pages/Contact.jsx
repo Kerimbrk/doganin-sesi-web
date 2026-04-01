@@ -1,27 +1,30 @@
 import { MapPin, Mail, Phone } from 'lucide-react';
 import './Contact.css';
+import { useLanguage } from '../context/useLanguage';
 
 const Contact = () => {
+  const { copy } = useLanguage();
+
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <div className="contact-kicker">Sorular, başvuru ve proje detayları</div>
-        <h1>İletişim</h1>
-        <p>Proje detayları ve sorularınız için bizimle iletişime geçebilirsiniz</p>
+        <div className="contact-kicker">{copy.contact.kicker}</div>
+        <h1>{copy.contact.title}</h1>
+        <p>{copy.contact.description}</p>
       </div>
 
       <div className="contact-grid">
         <div className="contact-info glass-panel">
-          <h2>İletişim Bilgileri</h2>
-          <p className="contact-intro">Proje merkezi Soma Bilim ve Sanat Merkezi&apos;dir. En hızlı geri dönüş için e-posta kanalını kullanabilirsiniz.</p>
+          <h2>{copy.contact.infoTitle}</h2>
+          <p className="contact-intro">{copy.contact.infoIntro}</p>
           
           <div className="info-item">
             <div className="info-icon-wrapper">
               <MapPin className="info-icon" />
             </div>
             <div>
-              <h3>Soma Bilim ve Sanat Merkezi (BİLSEM)</h3>
-              <p>TURGUTALP MAH. GEYİK SK. NO52<br/>SOMA / MANİSA</p>
+              <h3>{copy.contact.addressTitle}</h3>
+              <p>{copy.contact.addressLines[0]}<br/>{copy.contact.addressLines[1]}</p>
             </div>
           </div>
 
@@ -30,8 +33,8 @@ const Contact = () => {
               <Mail className="info-icon" />
             </div>
             <div>
-              <h3>Yürütücü E-Posta</h3>
-              <p>Yürütücü e-posta: <a href="mailto:burrki@gmail.com">burrki@gmail.com</a></p>
+              <h3>{copy.contact.emailTitle}</h3>
+              <p>{copy.contact.emailLabel} <a href="mailto:burrki@gmail.com">burrki@gmail.com</a></p>
             </div>
           </div>
 
@@ -40,7 +43,7 @@ const Contact = () => {
               <Phone className="info-icon" />
             </div>
             <div>
-              <h3>Telefon</h3>
+              <h3>{copy.contact.phoneTitle}</h3>
               <p><a href="tel:+905544660476">+90 554 466 04 76</a></p>
             </div>
           </div>
@@ -48,8 +51,8 @@ const Contact = () => {
 
         <div className="contact-map glass-panel">
           <div className="map-caption">
-            <span>Proje Merkezi</span>
-            <strong>Soma Bilim ve Sanat Merkezi</strong>
+            <span>{copy.contact.mapCaption}</span>
+            <strong>{copy.contact.mapTitle}</strong>
           </div>
           <div className="map-placeholder">
              <iframe 
@@ -59,7 +62,7 @@ const Contact = () => {
                style={{ border: 0 }} 
                allowFullScreen="" 
                loading="lazy" 
-               title="Turgutalp Mah. Geyik Sk. No52 Soma / Manisa Konumu"
+               title={copy.contact.mapFrameTitle}
              ></iframe>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import './Team.css';
+import { useLanguage } from '../context/useLanguage';
 
 import imgDilek from '../assets/images/team/dilek_hoca.jpg';
 import imgHakan from '../assets/images/team/hakan_hoca_optimized.jpg';
@@ -21,45 +22,45 @@ const getAcademicRank = (name) => {
 
 const teamData = {
   coordinator: [
-    { id: 1, role: 'Proje Yürütücüsü', name: 'Kerim Burak Beyge', title: 'Fen Bilimleri Öğretmeni / Biyoloji', image: imgKerim },
+    { id: 1, roleKey: 'coordinator', name: 'Kerim Burak Beyge', titleKey: 'coordinator', image: imgKerim },
   ],
   experts: [
-    { id: 2, role: 'Proje Uzmanı', name: 'Doç. Dr. Taner Özcan', title: 'Fen Eğitimi Uzmanı', image: imgTaner },
+    { id: 2, roleKey: 'expert', name: 'Doç. Dr. Taner Özcan', titleKey: 'taner', image: imgTaner },
   ],
   instructors: [
-    { id: 4, role: 'Eğitmen', name: 'Prof. Dr. Dilek Türker', title: 'Hidrobiyoloji ve Kırmızı Mercanlar', image: imgDilek },
-    { id: 6, role: 'Eğitmen', name: 'Prof. Dr. Selami Selvi', title: 'Doğal Boyama Uzmanı', image: imgSelami },
-    { id: 8, role: 'Eğitmen', name: 'Prof. Dr. Hakan Önal', title: 'İklim ve Hava Uzmanı', image: imgHakan },
-    { id: 14, role: 'Eğitmen', name: 'Doç. Dr. Taner Özcan', title: 'Fen Eğitimi Uzmanı / Değişen Sadece İklim mi?', image: imgTaner },
-    { id: 5, role: 'Eğitmen', name: 'Dr. Nicklas Jansson', title: 'Entomolog / Böcek Ekolojisi', image: imgNicklas },
-    { id: 7, role: 'Eğitmen', name: 'Dr. Öğr. Sakin Vural Varlı', title: 'Liken ve Bitki Uzmanı', image: imgSakin },
-    { id: 12, role: 'Eğitmen', name: 'Dr. Öğr. Ayşegül Karaahmetoğlu Çoban', title: 'Kuş Gözlemcisi / Uzmanı', image: null },
-    { id: 13, role: 'Eğitmen / P4C', name: 'Dr. Öğr. Burak Çakır', title: 'Çocuklar İçin Felsefe (P4C)', image: null },
-    { id: 9, role: 'Eğitmen', name: 'Öğr. Üyesi Handan Kurtulmuş Sancak', title: 'Doğanın Gizemli Canlıları', image: imgHandan },
-    { id: 3, role: 'Eğitmen', name: 'Mustafa Sabur', title: 'Müzik Öğretmeni / Sanat Eğitimcisi', image: null },
-    { id: 10, role: 'Eğitmen', name: 'Hülya Demirok Balaban', title: 'Seramik ve Bitki Baskısı', image: imgHulya },
+    { id: 4, roleKey: 'instructor', name: 'Prof. Dr. Dilek Türker', titleKey: 'dilek', image: imgDilek },
+    { id: 6, roleKey: 'instructor', name: 'Prof. Dr. Selami Selvi', titleKey: 'selami', image: imgSelami },
+    { id: 8, roleKey: 'instructor', name: 'Prof. Dr. Hakan Önal', titleKey: 'hakan', image: imgHakan },
+    { id: 14, roleKey: 'instructor', name: 'Doç. Dr. Taner Özcan', titleKey: 'tanerInstructor', image: imgTaner },
+    { id: 5, roleKey: 'instructor', name: 'Dr. Nicklas Jansson', titleKey: 'nicklas', image: imgNicklas },
+    { id: 7, roleKey: 'instructor', name: 'Dr. Öğr. Sakin Vural Varlı', titleKey: 'sakin', image: imgSakin },
+    { id: 12, roleKey: 'instructor', name: 'Dr. Öğr. Ayşegül Karaahmetoğlu Çoban', titleKey: 'aysegul', image: null },
+    { id: 13, roleKey: 'instructorP4C', name: 'Dr. Öğr. Burak Çakır', titleKey: 'burak', image: null },
+    { id: 9, roleKey: 'instructor', name: 'Öğr. Üyesi Handan Kurtulmuş Sancak', titleKey: 'handan', image: imgHandan },
+    { id: 3, roleKey: 'instructor', name: 'Mustafa Sabur', titleKey: 'mustafa', image: null },
+    { id: 10, roleKey: 'instructor', name: 'Hülya Demirok Balaban', titleKey: 'hulya', image: imgHulya },
   ],
   guides: [
-    { id: 11, role: 'Rehber', name: 'Nazire Taşkın', title: 'Rehber / Proje Ekibi', image: imgNazire },
-    { id: 15, role: 'Rehber', name: 'Derya Deniz Karameşe', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 16, role: 'Rehber', name: 'Şeyma Yeşil', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 17, role: 'Rehber', name: 'Ertan Öz', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 18, role: 'Rehber', name: 'Fadime Gül Ökten', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 19, role: 'Rehber', name: 'Ayşe Altun', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 20, role: 'Rehber', name: 'Bayram Gülcan', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 21, role: 'Rehber', name: 'Enise Ulu Çoğalan', title: 'Rehber / Proje Ekibi', image: null },
-    { id: 22, role: 'Rehber', name: 'Faysal Sayan', title: 'Rehber / Proje Ekibi', image: null },
+    { id: 11, roleKey: 'guide', name: 'Nazire Taşkın', titleKey: 'guide', image: imgNazire },
+    { id: 15, roleKey: 'guide', name: 'Derya Deniz Karameşe', titleKey: 'guide', image: null },
+    { id: 16, roleKey: 'guide', name: 'Şeyma Yeşil', titleKey: 'guide', image: null },
+    { id: 17, roleKey: 'guide', name: 'Ertan Öz', titleKey: 'guide', image: null },
+    { id: 18, roleKey: 'guide', name: 'Fadime Gül Ökten', titleKey: 'guide', image: null },
+    { id: 19, roleKey: 'guide', name: 'Ayşe Altun', titleKey: 'guide', image: null },
+    { id: 20, roleKey: 'guide', name: 'Bayram Gülcan', titleKey: 'guide', image: null },
+    { id: 21, roleKey: 'guide', name: 'Enise Ulu Çoğalan', titleKey: 'guide', image: null },
+    { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: null },
   ],
   healthPersonnel: [
-    { id: 30, role: 'Sağlık Personeli', name: 'Dr. Emre Tufan', title: 'Sağlık Personeli / İlk Yardım Desteği', image: null },
+    { id: 30, roleKey: 'health', name: 'Dr. Emre Tufan', titleKey: 'health', image: null },
   ],
   volunteers: [
-    { id: 101, role: 'Proje Gönüllüsü', name: 'İbrahim Benli', title: 'Öğrenci', image: null },
-    { id: 102, role: 'Proje Gönüllüsü', name: 'Arda Kıvrak', title: 'Öğrenci', image: null },
-    { id: 103, role: 'Proje Gönüllüsü', name: 'Mehmet Furkan Sakar', title: 'Öğrenci', image: null },
-    { id: 104, role: 'Proje Gönüllüsü', name: 'Elif Baysal', title: 'Öğrenci', image: null },
-    { id: 105, role: 'Proje Gönüllüsü', name: 'Aysu Büber', title: 'Öğrenci', image: null },
-    { id: 106, role: 'Proje Gönüllüsü', name: 'Azra Uzun', title: 'Öğrenci', image: null },
+    { id: 101, roleKey: 'volunteer', name: 'İbrahim Benli', titleKey: 'student', image: null },
+    { id: 102, roleKey: 'volunteer', name: 'Arda Kıvrak', titleKey: 'student', image: null },
+    { id: 103, roleKey: 'volunteer', name: 'Mehmet Furkan Sakar', titleKey: 'student', image: null },
+    { id: 104, roleKey: 'volunteer', name: 'Elif Baysal', titleKey: 'student', image: null },
+    { id: 105, roleKey: 'volunteer', name: 'Aysu Büber', titleKey: 'student', image: null },
+    { id: 106, roleKey: 'volunteer', name: 'Azra Uzun', titleKey: 'student', image: null },
   ]
 };
 
@@ -70,70 +71,72 @@ teamData.instructors.sort((a, b) => {
   return a.name.localeCompare(b.name, 'tr');
 });
 
-const renderMemberCard = (member) => (
+const renderMemberCard = (member, copy) => (
   <div key={member.id} className="team-card glass-panel">
     <div className={`member-photo ${!member.image ? 'placeholder-bg' : ''}`}>
       {member.image ? (
         <img src={member.image} alt={member.name} loading="lazy" decoding="async" />
       ) : (
-        <div className="placeholder-text">Fotoğraf<br/>(Drive&apos;dan Bekleniyor)</div>
+        <div className="placeholder-text">{copy.team.placeholder.split('\n')[0]}<br/>{copy.team.placeholder.split('\n')[1]}</div>
       )}
     </div>
     <div className="member-info">
-      <span className="member-role">{member.role}</span>
+      <span className="member-role">{copy.team.roles[member.roleKey]}</span>
       <h3>{member.name}</h3>
-      <p>{member.title}</p>
+      <p>{copy.team.titles[member.titleKey]}</p>
     </div>
   </div>
 );
 
 const Team = () => {
+  const { copy } = useLanguage();
+
   return (
     <div className="team-page">
       <div className="team-header">
-        <h1>Proje Ekibimiz</h1>
-        <p>Bilim, sanat ve doğayı güçlü bir vizyonla çocuklarla buluşturan uzman kadromuz</p>
+        <h1>{copy.team.title}</h1>
+        <p>{copy.team.description}</p>
       </div>
 
       <section className="team-section">
-        <h2 className="team-section-title">Proje Yürütücüsü</h2>
+        <h2 className="team-section-title">{copy.team.sections.coordinator}</h2>
         <div className="team-grid single-member">
-          {teamData.coordinator.map(renderMemberCard)}
+          {teamData.coordinator.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
 
       <section className="team-section">
-        <h2 className="team-section-title">Proje Uzmanı</h2>
+        <h2 className="team-section-title">{copy.team.sections.experts}</h2>
         <div className="team-grid">
-          {teamData.experts.map(renderMemberCard)}
+          {teamData.experts.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
 
       <section className="team-section">
-        <h2 className="team-section-title">Eğitmenler</h2>
+        <h2 className="team-section-title">{copy.team.sections.instructors}</h2>
         <div className="team-grid">
-          {teamData.instructors.map(renderMemberCard)}
+          {teamData.instructors.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
 
       <section className="team-section">
-        <h2 className="team-section-title">Rehberler</h2>
+        <h2 className="team-section-title">{copy.team.sections.guides}</h2>
         <div className="team-grid">
-          {teamData.guides.map(renderMemberCard)}
+          {teamData.guides.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
 
       <section className="team-section">
-        <h2 className="team-section-title">Sağlık Personeli</h2>
+        <h2 className="team-section-title">{copy.team.sections.healthPersonnel}</h2>
         <div className="team-grid">
-          {teamData.healthPersonnel.map(renderMemberCard)}
+          {teamData.healthPersonnel.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
 
       <section className="team-section">
-        <h2 className="team-section-title">Proje Gönüllüleri</h2>
+        <h2 className="team-section-title">{copy.team.sections.volunteers}</h2>
         <div className="team-grid">
-          {teamData.volunteers.map(renderMemberCard)}
+          {teamData.volunteers.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
     </div>

@@ -2,12 +2,14 @@ import { useState } from 'react';
 import './Program.css';
 import scheduleData from '../data/schedule.json';
 import { Calendar, MapPin, Clock, Info, User } from 'lucide-react';
+import { useLanguage } from '../context/useLanguage';
+import { programEventTranslations } from '../i18n/programTranslations';
 
-const formatDateLabel = (dateString) => {
+const formatDateLabel = (dateString, locale) => {
   const [day, month, year] = dateString.split('/');
   const parsedDate = new Date(`${year}-${month}-${day}T12:00:00`);
 
-  return new Intl.DateTimeFormat('tr-TR', {
+  return new Intl.DateTimeFormat(locale, {
     day: 'numeric',
     month: 'long',
     weekday: 'long',
@@ -22,6 +24,7 @@ const groupedSchedule = scheduleData.reduce((acc, event) => {
 }, {});
 
 const Program = () => {
+  const { language, copy } = useLanguage();
   const totalEventCount = scheduleData.length;
   const [activeDate, setActiveDate] = useState(Object.keys(groupedSchedule)[0]);
   const [expandedEventId, setExpandedEventId] = useState(null);
@@ -33,21 +36,21 @@ const Program = () => {
   return (
     <div className="program-page">
       <div className="program-header">
-        <div className="program-kicker">5 günlük saha ve atölye akışı</div>
-        <h1>Etkinlik Takvimi</h1>
-        <p>5 günlük yoğun ve eğlenceli iklim değişikliği eğitim programı planı</p>
+        <div className="program-kicker">{copy.program.kicker}</div>
+        <h1>{copy.program.title}</h1>
+        <p>{copy.program.description}</p>
         <div className="program-summary">
           <div className="summary-pill">
-            <strong>Toplam</strong>
-            <span>{totalEventCount} etkinlik</span>
+            <strong>{copy.program.summary.total}</strong>
+            <span>{totalEventCount} {copy.program.summary.totalSuffix}</span>
           </div>
           <div className="summary-pill">
-            <strong>Başlangıç</strong>
-            <span>{formatDateLabel(Object.keys(groupedSchedule)[0])}</span>
+            <strong>{copy.program.summary.start}</strong>
+            <span>{formatDateLabel(Object.keys(groupedSchedule)[0], copy.locale)}</span>
           </div>
           <div className="summary-pill">
-            <strong>Merkez</strong>
-            <span>Soma BİLSEM</span>
+            <strong>{copy.program.summary.center}</strong>
+            <span>{copy.program.summary.centerValue}</span>
           </div>
         </div>
       </div>
@@ -63,8 +66,8 @@ const Program = () => {
               type="button"
             >
               <Calendar size={18} />
-              <span>{index + 1}. Gün</span>
-              <small>{formatDateLabel(date)}</small>
+              <span>{index + 1}. {copy.program.tabs.day}</span>
+              <small>{formatDateLabel(date, copy.locale)}</small>
             </button>
           ))}
         </div>
@@ -73,11 +76,9 @@ const Program = () => {
         <div className="timeline-container">
           {groupedSchedule[activeDate]?.map((event) => {
             const isExpanded = expandedEventId === event.id;
-            // Clean up the name a bit to match the user's requested format:
-            // Example: "17. Etkinlik - Kim Dışkı Yiyor? - Dr. Nicklas Jansson"
-            // If the original name already has "17. Etkinlik", we might just need to format it nicely.
+            const eventCopy = language === 'en' ? programEventTranslations[event.id] : null;
             const instructorTitle = event.instructor ? ` - ${event.instructor}` : "";
-            const displayTitle = `${event.name}${instructorTitle}`;
+            const displayTitle = `${eventCopy?.name || event.name}${instructorTitle}`;
 
             return (
               <div key={event.id} className={`timeline-event ${isExpanded ? 'expanded' : ''}`}>
@@ -101,11 +102,11 @@ const Program = () => {
                 >
                   <div className="event-summary">
                     <div className="event-copy">
-                      <span className="event-badge">{formatDateLabel(event.date)}</span>
+                      <span className="event-badge">{formatDateLabel(event.date, copy.locale)}</span>
                       <h3>{displayTitle}</h3>
                     </div>
                     <button className="expand-btn" type="button" tabIndex={-1}>
-                      {isExpanded ? 'Gizle' : 'Detaylar'}
+                      {isExpanded ? copy.program.hideButton : copy.program.detailsButton}
                     </button>
                   </div>
                   
@@ -113,15 +114,15 @@ const Program = () => {
                     <div className="event-details">
                       <div className="detail-row">
                         <MapPin size={16} />
-                        <span><strong>Mekan:</strong> {event.location}</span>
+                        <span><strong>{copy.program.detailLabels.location}:</strong> {eventCopy?.location || event.location}</span>
                       </div>
                       <div className="detail-row">
                         <User size={16} />
-                        <span><strong>Eğitmen/Rehber:</strong> {event.instructor || "Proje Ekibi"}</span>
+                        <span><strong>{copy.program.detailLabels.instructor}:</strong> {event.instructor || copy.program.detailLabels.fallbackInstructor}</span>
                       </div>
                       <div className="detail-description">
                         <Info size={16} className="info-icon" />
-                        <p>{event.description || "Bu etkinlik için detaylı bilgi girilmemiştir."}</p>
+                        <p>{eventCopy?.description || event.description || copy.program.detailLabels.fallbackDescription}</p>
                       </div>
                     </div>
                   )}

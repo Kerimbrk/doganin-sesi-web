@@ -1,54 +1,57 @@
 import { ExternalLink, FileText, Download, CheckCircle } from 'lucide-react';
 import './Application.css';
+import { useLanguage } from '../context/useLanguage';
 
 const Application = () => {
+  const { copy } = useLanguage();
+
   return (
     <div className="application-page">
       <div className="app-header">
-        <h1>Başvuru Şartları ve Kayıt</h1>
-        <p>Doğanın Sesi kampına katılmak için gereken adımlar ve formlar</p>
+        <h1>{copy.application.title}</h1>
+        <p>{copy.application.description}</p>
       </div>
 
       <div className="app-content">
         <section className="app-criteria glass-panel">
-          <h2>Seçim Kriterleri</h2>
+          <h2>{copy.application.criteriaTitle}</h2>
           <ul className="criteria-list">
-            <li><CheckCircle size={20} className="icon-check" /> Manisa ilindeki devlet okullarında veya Soma BİLSEM&apos;de öğrenim gören 7. sınıf öğrencisi olmak.</li>
-            <li><CheckCircle size={20} className="icon-check" /> Doğa, iklim değişikliği ve bilimsel çalışmalara ilgi duymak.</li>
-            <li><CheckCircle size={20} className="icon-check" /> Kamp süresince gerçekleştirilecek açık alan ve doğa etkinliklerine sağlık engeli bulunmamak.</li>
+            {copy.application.criteria.map((item) => (
+              <li key={item}><CheckCircle size={20} className="icon-check" /> {item}</li>
+            ))}
           </ul>
         </section>
 
         <section className="app-forms">
-          <h2>İndirilmesi Gereken Belgeler</h2>
-          <p>Lütfen online başvuru formunu doldurmadan önce aşağıdaki belgeleri inceleyiniz. PDF dosyaları yayınlandığında bu alandan indirilebilecektir.</p>
+          <h2>{copy.application.documentsTitle}</h2>
+          <p>{copy.application.documentsDescription}</p>
           
           <div className="docs-grid">
             <div className="doc-card glass-panel">
               <FileText size={40} className="doc-icon" />
-              <h3>Veli İzin Belgesi</h3>
-              <p>Öğrencinin TÜBİTAK doğa eğitim kampına katılması için veli muvafakatnamesi / yasal vesayet formu.</p>
+              <h3>{copy.application.documents[0].title}</h3>
+              <p>{copy.application.documents[0].description}</p>
               <button className="btn-download" type="button" disabled aria-disabled="true">
-                <Download size={16}/> PDF Yakında Eklenecek
+                <Download size={16}/> {copy.application.pdfSoon}
               </button>
             </div>
             
             <div className="doc-card glass-panel">
               <FileText size={40} className="doc-icon" />
-              <h3>Diğer İzin Belgeleri</h3>
-              <p>KVKK aydınlatma metni, ses/görüntü kayıt izni ve alerji beyan formlarını içeren evrak paketi.</p>
+              <h3>{copy.application.documents[1].title}</h3>
+              <p>{copy.application.documents[1].description}</p>
               <button className="btn-download" type="button" disabled aria-disabled="true">
-                <Download size={16}/> PDF Yakında Eklenecek
+                <Download size={16}/> {copy.application.pdfSoon}
               </button>
             </div>
           </div>
         </section>
 
         <section className="app-online glass-panel highlight-box">
-          <h2>Online Başvuru Formu</h2>
-          <p>İzin belgeleriniz hazır olduğunda aşağıdaki butona tıklayarak resmi kaydınızı doğrudan Google Form üzerinden projemize iletebilirsiniz.</p>
+          <h2>{copy.application.onlineTitle}</h2>
+          <p>{copy.application.onlineDescription}</p>
           <a href="https://forms.gle/DMNZpEZhtR8ja3pJA" target="_blank" rel="noopener noreferrer" className="btn-google-form">
-            <span>Google Form ile Başvur</span>
+            <span>{copy.application.onlineButton}</span>
             <ExternalLink size={20} />
           </a>
         </section>
