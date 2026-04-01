@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import heroImage from '../assets/images/hero_banner.png';
 
 const Home = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date('2026-06-29T09:00:00').getTime();
+
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        });
+      } else {
+        clearInterval(timer);
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="home-page">
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
@@ -16,8 +45,25 @@ const Home = () => {
               <button className="btn-secondary">Etkinlik Programı</button>
             </div>
             <div className="countdown">
-              <span>Kamp Başlangıcına Kalan: </span>
-              <strong>453 Gün</strong>
+              <span className="countdown-label">Kamp Başlangıcına Kalan:</span>
+              <div className="countdown-timer">
+                <div className="countdown-item">
+                  <span className="num">{timeLeft.days}</span>
+                  <span className="label">Gün</span>
+                </div>
+                <div className="countdown-item">
+                  <span className="num">{timeLeft.hours}</span>
+                  <span className="label">Saat</span>
+                </div>
+                <div className="countdown-item">
+                  <span className="num">{timeLeft.minutes}</span>
+                  <span className="label">Dak</span>
+                </div>
+                <div className="countdown-item">
+                  <span className="num">{timeLeft.seconds}</span>
+                  <span className="label">Sn</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

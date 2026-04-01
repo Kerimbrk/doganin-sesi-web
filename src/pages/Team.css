@@ -20,10 +20,28 @@
   color: var(--color-text-muted);
 }
 
+.team-section {
+  margin-bottom: 5rem;
+}
+
+.team-section-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-accent-light);
+  display: inline-block;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
+}
+
+.team-grid.single-member {
+  grid-template-columns: minmax(280px, 400px);
+  justify-content: center;
 }
 
 .team-card {
