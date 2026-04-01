@@ -71,11 +71,12 @@
 
 @media (max-width: 768px) {
   .logo-box-side {
-    width: min(100%, 180px);
+    width: 100%;
+    min-height: 108px;
   }
 
   .inst-logo {
-    max-height: 58px;
+    max-height: 54px;
   }
 
   .logo-text-fallback {

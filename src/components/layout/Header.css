@@ -182,31 +182,27 @@
   }
 
   .site-header.is-scrolled .header-top {
-    max-height: 0;
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-    border-bottom-color: transparent;
+    display: none;
   }
 
   .header-top {
-    padding: 0.6rem;
+    padding: 0.55rem;
   }
 
   .header-showcase {
-    grid-template-columns: 1fr;
-    gap: 0.9rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
   .project-badge {
-    order: -1;
+    grid-column: 1 / -1;
     min-height: auto;
-    padding: 0.8rem 0.95rem;
+    padding: 0.72rem 0.85rem;
   }
 
   .logo-box-side {
-    justify-self: center;
+    width: 100%;
+    justify-self: stretch;
   }
 
   .header-bottom {
@@ -216,7 +212,7 @@
   }
 
   .site-header.is-scrolled .header-bottom {
-    padding-top: 0.6rem;
+    padding-top: 0.55rem;
   }
 
   .main-nav {
@@ -239,6 +235,10 @@
 
   .project-subtitle {
     font-size: 0.74rem;
+  }
+
+  .project-chip {
+    font-size: 0.58rem;
   }
 
   .brand-text {
