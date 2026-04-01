@@ -90,6 +90,7 @@ const renderMemberCard = (member, copy) => (
 
 const Team = () => {
   const { copy } = useLanguage();
+  const getGridClassName = (members) => `team-grid${members.length === 1 ? ' single-member' : ''}`;
 
   return (
     <div className="team-page">
@@ -107,7 +108,7 @@ const Team = () => {
 
       <section className="team-section">
         <h2 className="team-section-title">{copy.team.sections.experts}</h2>
-        <div className="team-grid">
+        <div className={getGridClassName(teamData.experts)}>
           {teamData.experts.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
@@ -128,7 +129,7 @@ const Team = () => {
 
       <section className="team-section">
         <h2 className="team-section-title">{copy.team.sections.healthPersonnel}</h2>
-        <div className="team-grid">
+        <div className={getGridClassName(teamData.healthPersonnel)}>
           {teamData.healthPersonnel.map((member) => renderMemberCard(member, copy))}
         </div>
       </section>
