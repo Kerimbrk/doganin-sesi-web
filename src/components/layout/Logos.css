@@ -1,0 +1,74 @@
+/* Header Logos Styling */
+.logos-container {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 60px;
+}
+
+.inst-logo {
+  max-width: 100%;
+  max-height: 45px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.logo-text-fallback {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Logos Styling */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer-logo-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  transition: background 0.3s ease;
+}
+
+.footer-logo-box:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-inst-logo {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.footer-logo-text-fallback {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

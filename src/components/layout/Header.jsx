@@ -2,15 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf } from 'lucide-react';
 import './Header.css';
+import './Logos.css';
+
+// Logo Imports
+import tubitakLogo from '../../assets/images/logos/tubitak.png';
+import bilsemLogo from '../../assets/images/logos/soma_bilsem.png';
 
 const Header = () => {
   return (
     <header className="site-header glass-panel">
       <div className="header-top">
         <div className="logos-container">
-          {/* Main Institution Logos Placeholders */}
-          <div className="logo-placeholder">TÜBİTAK 4004</div>
-          <div className="logo-placeholder">Soma BİLSEM</div>
+          <div className="logo-box">
+            <img src={tubitakLogo} alt="TÜBİTAK 4004" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+            <span className="logo-text-fallback">TÜBİTAK 4004</span>
+          </div>
+          <div className="logo-box">
+            <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+            <span className="logo-text-fallback">Soma BİLSEM</span>
+          </div>
         </div>
       </div>
       
