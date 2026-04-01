@@ -6,6 +6,7 @@ import './Logos.css';
 
 // Logo Imports
 import tubitakLogo from '../../assets/images/logos/tubitak.png';
+import tubitak4004Logo from '../../assets/images/logos/tubitak_4004.png';
 import bilsemLogo from '../../assets/images/logos/soma_bilsem.png';
 
 const Header = () => {
@@ -13,11 +14,15 @@ const Header = () => {
     <header className="site-header glass-panel">
       <div className="header-top">
         <div className="logos-container">
-          <div className="logo-box">
-            <img src={tubitakLogo} alt="TÜBİTAK 4004" className="inst-logo" onError={(e) => e.target.style.display='none'} />
-            <span className="logo-text-fallback">TÜBİTAK 4004</span>
+          <div className="logo-box larger-logo">
+            <img src={tubitakLogo} alt="TÜBİTAK" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+            <span className="logo-text-fallback">TÜBİTAK</span>
           </div>
-          <div className="logo-box">
+          <div className="logo-box larger-logo">
+            <img src={tubitak4004Logo} alt="TÜBİTAK 4004" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+            <span className="logo-text-fallback">4004 PROJESİ</span>
+          </div>
+          <div className="logo-box larger-logo">
             <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" onError={(e) => e.target.style.display='none'} />
             <span className="logo-text-fallback">Soma BİLSEM</span>
           </div>

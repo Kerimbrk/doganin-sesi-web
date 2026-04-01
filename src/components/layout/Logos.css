@@ -14,11 +14,16 @@
   height: 60px;
 }
 
+.logo-box.larger-logo {
+  min-width: 150px;
+  height: 160px;
+}
+
 .inst-logo {
   max-width: 100%;
-  max-height: 45px;
+  max-height: 135px;
   object-fit: contain;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .logo-text-fallback {
