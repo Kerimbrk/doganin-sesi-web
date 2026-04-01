@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
             <div>
               <h3>Soma Bilim ve Sanat Merkezi (BİLSEM)</h3>
-              <p>Kurtuluş Mah. İdman Sok. No: 12<br/>Soma / Manisa</p>
+              <p>TURGUTALP MAH. GEYİK SK. NO52<br/>SOMA / MANİSA</p>
             </div>
           </div>
 
@@ -30,8 +30,8 @@ const Contact = () => {
               <Mail className="info-icon" />
             </div>
             <div>
-              <h3>E-Posta Adresimiz</h3>
-              <p><a href="mailto:kerimbeyge@gmail.com">kerimbeyge@gmail.com</a></p>
+              <h3>Yürütücü E-Posta</h3>
+              <p>Yürütücü e-posta: <a href="mailto:burrki@gmail.com">burrki@gmail.com</a></p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
             <div>
               <h3>Telefon</h3>
-              <p>İletişim detayları yakında eklenecektir.</p>
+              <p><a href="tel:+905544660476">+90 554 466 04 76</a></p>
             </div>
           </div>
         </div>
@@ -53,13 +53,13 @@ const Contact = () => {
           </div>
           <div className="map-placeholder">
              <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.804961917387!2d27.604118876403064!3d39.183707871660144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b98436cd970bc3%3A0x6d90ddafcb1f0ab9!2sSoma%20Bilim%20ve%20Sanat%20Merkezi!5e0!3m2!1str!2str!4v1703248383210!5m2!1str!2str" 
+               src="https://www.google.com/maps?q=TURGUTALP%20MAH.%20GEYIK%20SK.%20NO52%20SOMA%20MANISA&output=embed"
                width="100%" 
                height="100%" 
                style={{ border: 0 }} 
                allowFullScreen="" 
                loading="lazy" 
-               title="Soma Bilim ve Sanat Merkezi Konumu"
+               title="Turgutalp Mah. Geyik Sk. No52 Soma / Manisa Konumu"
              ></iframe>
           </div>
         </div>
