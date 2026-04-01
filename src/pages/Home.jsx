@@ -68,15 +68,6 @@ const Home = () => {
             <h1>Doğanın Sesi</h1>
             <h2>İklim Değişikliğini Anlamak ve Öğrenmek I</h2>
             <p>Doğa eğitimi, bilim, sanat ve ekolojik okuryazarlığı bir araya getiren bu kamp portalında proje içeriğini, takvimi ve başvuru adımlarını tek yerden keşfedin.</p>
-            <div className="hero-highlights">
-              <span>36 öğrenci</span>
-              <span>5 gün</span>
-              <span>4 ekosistem</span>
-            </div>
-            <div className="hero-actions">
-              <Link to="/basvuru" className="btn-primary">Başvuru Şartları</Link>
-              <Link to="/program" className="btn-secondary">Etkinlik Programı</Link>
-            </div>
             <div className="countdown">
               <span className="countdown-label">Kamp Başlangıcına Kalan:</span>
               <div className="countdown-timer">
@@ -98,6 +89,15 @@ const Home = () => {
                 </div>
               </div>
               <span className="countdown-date">{targetDateLabel} tarihinde başlıyor</span>
+            </div>
+            <div className="hero-highlights">
+              <span>36 öğrenci</span>
+              <span>5 gün</span>
+              <span>4 ekosistem</span>
+            </div>
+            <div className="hero-actions">
+              <Link to="/basvuru" className="btn-primary">Başvuru Şartları</Link>
+              <Link to="/program" className="btn-secondary">Etkinlik Programı</Link>
             </div>
           </div>
         </div>
