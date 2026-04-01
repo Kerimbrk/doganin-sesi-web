@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Leaf } from 'lucide-react';
 import './Header.css';
 import './Logos.css';
@@ -7,24 +6,29 @@ import './Logos.css';
 // Logo Imports
 import tubitakLogo from '../../assets/images/logos/tubitak.png';
 // import tubitak4004Logo from '../../assets/images/logos/tubitak_4004.png'; // File missing, commented out to fix build
-import bilsemLogo from '../../assets/images/logos/soma_bilsem.png';
+import bilsemLogo from '../../assets/images/logos/soma_bilsem_optimized.png';
 
 const Header = () => {
+  const getNavClassName = ({ isActive }) => `nav-link${isActive ? ' active' : ''}`;
+
   return (
     <header className="site-header glass-panel">
       <div className="header-top">
-        <div className="logos-container">
-          <div className="logo-box larger-logo">
-            <img src={tubitakLogo} alt="TÜBİTAK" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+        <div className="header-showcase">
+          <div className="logo-box logo-box-side">
+            <img src={tubitakLogo} alt="TÜBİTAK" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
             <span className="logo-text-fallback">TÜBİTAK</span>
           </div>
-          <div className="logo-box larger-logo">
-            {/* tubitak_4004.png dosyası yüklendiğinde aşağıdaki img etiketi aktif edilecek */}
-            {/* <img src={tubitak4004Logo} alt="TÜBİTAK 4004" className="inst-logo" onError={(e) => e.target.style.display='none'} /> */}
-            <span className="logo-text-fallback">4004 PROJESİ</span>
+
+          <div className="project-badge">
+            <span className="project-kicker">TÜBİTAK 4004</span>
+            <h1 className="project-title">Doğanın Sesi</h1>
+            <p className="project-subtitle">İklim Değişikliğini Anlamak ve Öğrenmek</p>
+            <span className="project-chip">Doğa Eğitimi ve Bilim Okulları Projesi</span>
           </div>
-          <div className="logo-box larger-logo">
-            <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" onError={(e) => e.target.style.display='none'} />
+
+          <div className="logo-box logo-box-side">
+            <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
             <span className="logo-text-fallback">Soma BİLSEM</span>
           </div>
         </div>
@@ -33,16 +37,16 @@ const Header = () => {
       <div className="header-bottom">
         <Link to="/" className="brand">
           <Leaf className="brand-icon" size={28} />
-          <span className="brand-text">Doğanın Sesi</span>
+          <span className="brand-text">Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek</span>
         </Link>
         
-        <nav className="main-nav">
-          <Link to="/" className="nav-link">Ana Sayfa</Link>
-          <Link to="/hakkimizda" className="nav-link">Hakkımızda</Link>
-          <Link to="/program" className="nav-link">Program</Link>
-          <Link to="/ekibimiz" className="nav-link">Ekibimiz</Link>
-          <Link to="/iletisim" className="nav-link">İletişim</Link>
-          <Link to="/basvuru" className="nav-link btn-primary">Başvuru Yap</Link>
+        <nav className="main-nav" aria-label="Ana gezinme">
+          <NavLink to="/" end className={getNavClassName}>Ana Sayfa</NavLink>
+          <NavLink to="/hakkimizda" className={getNavClassName}>Hakkımızda</NavLink>
+          <NavLink to="/program" className={getNavClassName}>Program</NavLink>
+          <NavLink to="/ekibimiz" className={getNavClassName}>Ekibimiz</NavLink>
+          <NavLink to="/iletisim" className={getNavClassName}>İletişim</NavLink>
+          <NavLink to="/basvuru" className={({ isActive }) => `nav-link btn-primary${isActive ? ' active' : ''}`}>Başvuru Yap</NavLink>
         </nav>
       </div>
     </header>

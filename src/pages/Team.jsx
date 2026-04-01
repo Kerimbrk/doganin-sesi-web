@@ -1,8 +1,7 @@
-import React from 'react';
 import './Team.css';
 
 import imgDilek from '../assets/images/team/dilek_hoca.jpg';
-import imgHakan from '../assets/images/team/hakan_hoca.jpg';
+import imgHakan from '../assets/images/team/hakan_hoca_optimized.jpg';
 import imgHandan from '../assets/images/team/handan_hoca.jpeg';
 import imgHulya from '../assets/images/team/hulya_hoca.jpeg';
 import imgKerim from '../assets/images/team/kerim_hoca.jpeg';
@@ -10,7 +9,7 @@ import imgNazire from '../assets/images/team/nazire_hoca.jpeg';
 import imgNicklas from '../assets/images/team/nicklas_hoca.avif';
 import imgSakin from '../assets/images/team/sakin_hoca.jpeg';
 import imgSelami from '../assets/images/team/selami_hoca.jpg';
-import imgTaner from '../assets/images/team/taner_hoca.jpg';
+import imgTaner from '../assets/images/team/taner_hoca_optimized.jpg';
 
 const teamData = {
   coordinator: [
@@ -44,13 +43,13 @@ const teamData = {
   ]
 };
 
-const TeamMember = ({ member }) => (
-  <div className="team-card glass-panel">
+const renderMemberCard = (member) => (
+  <div key={member.id} className="team-card glass-panel">
     <div className={`member-photo ${!member.image ? 'placeholder-bg' : ''}`}>
       {member.image ? (
-        <img src={member.image} alt={member.name} />
+        <img src={member.image} alt={member.name} loading="lazy" decoding="async" />
       ) : (
-        <div className="placeholder-text">Fotoğraf<br/>(Drive'dan Bekleniyor)</div>
+        <div className="placeholder-text">Fotoğraf<br/>(Drive&apos;dan Bekleniyor)</div>
       )}
     </div>
     <div className="member-info">
@@ -72,35 +71,35 @@ const Team = () => {
       <section className="team-section">
         <h2 className="team-section-title">Proje Yürütücüsü</h2>
         <div className="team-grid single-member">
-          {teamData.coordinator.map(member => <TeamMember key={member.id} member={member} />)}
+          {teamData.coordinator.map(renderMemberCard)}
         </div>
       </section>
 
       <section className="team-section">
         <h2 className="team-section-title">Proje Uzmanı</h2>
         <div className="team-grid">
-          {teamData.experts.map(member => <TeamMember key={member.id} member={member} />)}
+          {teamData.experts.map(renderMemberCard)}
         </div>
       </section>
 
       <section className="team-section">
         <h2 className="team-section-title">Eğitmenler</h2>
         <div className="team-grid">
-          {teamData.instructors.map(member => <TeamMember key={member.id} member={member} />)}
+          {teamData.instructors.map(renderMemberCard)}
         </div>
       </section>
 
       <section className="team-section">
         <h2 className="team-section-title">Rehberler</h2>
         <div className="team-grid">
-          {teamData.guides.map(member => <TeamMember key={member.id} member={member} />)}
+          {teamData.guides.map(renderMemberCard)}
         </div>
       </section>
 
       <section className="team-section">
         <h2 className="team-section-title">Proje Gönüllüleri</h2>
         <div className="team-grid">
-          {teamData.volunteers.map(member => <TeamMember key={member.id} member={member} />)}
+          {teamData.volunteers.map(renderMemberCard)}
         </div>
       </section>
     </div>

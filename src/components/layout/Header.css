@@ -2,21 +2,83 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  margin: 1rem;
+  margin: 0.45rem 0.75rem 0.65rem;
   display: flex;
   flex-direction: column;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .header-top {
   display: flex;
   justify-content: center;
-  padding: 0.5rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 0.45rem 0.75rem 0.4rem;
+  border-bottom: 1px solid rgba(27, 67, 50, 0.08);
 }
 
-.logos-container {
+.header-showcase {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(92px, 120px) minmax(220px, 1fr) minmax(92px, 120px);
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.project-badge {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.2rem;
+  min-height: 78px;
+  padding: 0.55rem 1rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top, rgba(168, 218, 220, 0.22), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(246, 250, 248, 0.84) 100%);
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  box-shadow: 0 10px 20px rgba(27, 67, 50, 0.05);
+}
+
+.project-kicker {
+  display: inline-flex;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(69, 123, 157, 0.1);
+  color: var(--color-secondary);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-title {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.8vw, 2rem);
+  color: var(--color-primary);
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.project-subtitle {
+  margin: 0;
+  max-width: 30ch;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  line-height: 1.15;
+}
+
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(27, 67, 50, 0.07);
+  color: var(--color-primary);
+  font-size: 0.62rem;
+  font-weight: 700;
 }
 
 .logo-placeholder {
@@ -32,47 +94,71 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  gap: 1rem;
+  padding: 0.55rem 0.9rem 0.65rem;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.55rem;
   color: var(--color-primary);
   text-decoration: none;
+  min-width: 0;
 }
 
 .brand-icon {
   color: var(--color-primary-light);
+  background: linear-gradient(135deg, rgba(45, 106, 79, 0.14), rgba(224, 122, 95, 0.16));
+  padding: 0.38rem;
+  border-radius: 999px;
+  flex-shrink: 0;
 }
 
 .brand-text {
-  font-size: 1.5rem;
+  font-size: 0.96rem;
   font-family: var(--font-heading);
   font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  max-width: 460px;
 }
 
 .main-nav {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
   align-items: center;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
 
 .nav-link {
+  position: relative;
   font-weight: 500;
   color: var(--color-text);
   transition: color 0.2s ease;
+  padding: 0.46rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.94rem;
 }
 
 .nav-link:hover {
   color: var(--color-primary);
+  background: rgba(45, 106, 79, 0.08);
+}
+
+.nav-link.active {
+  color: var(--color-primary);
+  background: rgba(45, 106, 79, 0.1);
 }
 
 .btn-primary {
   background-color: var(--color-accent);
   color: white !important;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 0.92rem;
   border-radius: 8px;
   box-shadow: var(--shadow-sm);
 }
@@ -80,4 +166,77 @@
 .btn-primary:hover {
   background-color: var(--color-accent-light);
   transform: translateY(-1px);
+}
+
+.btn-primary.active {
+  background-color: var(--color-accent);
+  box-shadow: 0 10px 20px -15px rgba(224, 122, 95, 0.95);
+}
+
+@media (max-width: 960px) {
+  .site-header {
+    margin: 0.45rem 0.6rem 0.7rem;
+  }
+
+  .header-top {
+    padding: 0.6rem;
+  }
+
+  .header-showcase {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .project-badge {
+    order: -1;
+    min-height: auto;
+    padding: 0.8rem 0.95rem;
+  }
+
+  .logo-box-side {
+    justify-self: center;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 0.7rem 0.85rem 0.8rem;
+  }
+
+  .main-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-title {
+    font-size: 1.55rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.74rem;
+  }
+
+  .brand-text {
+    font-size: 0.94rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav {
+    padding: 0.4rem;
+  }
 }

@@ -24,6 +24,7 @@
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --gradient-soft: radial-gradient(circle at top, rgba(168, 218, 220, 0.35), transparent 45%), linear-gradient(180deg, #f7faf8 0%, #eef5f2 100%);
 }
 
 * {
@@ -36,6 +37,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-background);
+  background-image: var(--gradient-soft);
   line-height: 1.6;
 }
 
@@ -73,4 +75,9 @@ main {
   border: var(--glass-border);
   box-shadow: var(--glass-shadow);
   border-radius: 12px;
+}
+
+button,
+a {
+  transition: all 0.2s ease;
 }

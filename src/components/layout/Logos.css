@@ -1,37 +1,34 @@
-/* Header Logos Styling */
-.logos-container {
-  display: flex;
-  gap: 2rem;
-  padding: 0.5rem 0;
-}
-
 .logo-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
   min-width: 100px;
-  height: 60px;
+  min-height: 60px;
 }
 
-.logo-box.larger-logo {
-  min-width: 150px;
-  height: 160px;
+.logo-box-side {
+  padding: 0.42rem 0.3rem 0.35rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(248, 250, 252, 0.72) 100%);
+  border: 1px solid rgba(27, 67, 50, 0.06);
+  box-shadow: 0 8px 16px rgba(27, 67, 50, 0.04);
 }
 
 .inst-logo {
   max-width: 100%;
-  max-height: 135px;
+  max-height: 62px;
   object-fit: contain;
-  margin-bottom: 8px;
 }
 
 .logo-text-fallback {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: var(--color-text-muted);
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
+  text-align: center;
 }
 
 /* Footer Logos Styling */
@@ -73,6 +70,18 @@
 }
 
 @media (max-width: 768px) {
+  .logo-box-side {
+    width: min(100%, 180px);
+  }
+
+  .inst-logo {
+    max-height: 58px;
+  }
+
+  .logo-text-fallback {
+    font-size: 0.56rem;
+  }
+
   .logo-grid {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -9,15 +9,63 @@
   margin-bottom: 3rem;
 }
 
+.program-kicker {
+  display: inline-flex;
+  padding: 0.45rem 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(69, 123, 157, 0.08);
+  border: 1px solid rgba(69, 123, 157, 0.14);
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .program-header h1 {
   font-size: 3rem;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
 }
 
 .program-header p {
   color: var(--color-text-muted);
   font-size: 1.1rem;
+}
+
+.program-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.summary-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 170px;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  box-shadow: 0 16px 35px rgba(27, 67, 50, 0.07);
+}
+
+.summary-pill strong {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.summary-pill span {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-top: 0.25rem;
 }
 
 .program-container {
@@ -32,6 +80,10 @@
   overflow-x: auto;
   padding: 1rem;
   justify-content: center;
+  scrollbar-width: thin;
+  background: rgba(255, 255, 255, 0.66);
+  border-radius: 28px;
+  border: 1px solid rgba(27, 67, 50, 0.08);
 }
 
 .date-tab {
@@ -40,13 +92,13 @@
   align-items: center;
   gap: 0.25rem;
   padding: 1rem 1.5rem;
-  background: white;
-  border: 1px solid var(--color-background);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  border-radius: 18px;
   cursor: pointer;
   min-width: 120px;
   transition: all 0.2s;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 12px 22px rgba(27, 67, 50, 0.06);
   color: var(--color-text);
 }
 
@@ -65,9 +117,9 @@
 }
 
 .date-tab.active {
-  background: var(--color-primary);
+  background: linear-gradient(180deg, var(--color-primary) 0%, #214f3c 100%);
   color: white;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 18px 28px rgba(27, 67, 50, 0.28);
   border-color: transparent;
 }
 
@@ -79,15 +131,27 @@
 .timeline-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.15rem;
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
 }
 
 .timeline-event {
+  position: relative;
   display: flex;
   gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: 158px;
+  top: 0;
+  bottom: -1.15rem;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(69, 123, 157, 0.16), rgba(69, 123, 157, 0.02));
 }
 
 .event-time {
@@ -98,49 +162,86 @@
   color: var(--color-secondary);
   font-weight: 600;
   padding-top: 1rem;
+  position: sticky;
+  top: 112px;
+  z-index: 1;
 }
 
 .event-card {
   flex-grow: 1;
-  background: white;
-  border: 1px solid rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(27, 67, 50, 0.08);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+  border-radius: 24px;
 }
 
 .event-card:hover {
   transform: translateX(5px);
   border-color: var(--color-secondary-light);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 18px 36px rgba(27, 67, 50, 0.12);
 }
 
 .event-summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
+  gap: 1rem;
+  padding: 1.35rem 1.4rem;
+}
+
+.event-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.event-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(69, 123, 157, 0.08);
+  color: var(--color-secondary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .event-summary h3 {
   font-size: 1.15rem;
   color: var(--color-text);
   margin: 0;
+  line-height: 1.45;
+  transition: color 0.2s ease;
 }
 
 .expand-btn {
-  background: transparent;
-  border: 1px solid var(--color-secondary);
+  background: rgba(69, 123, 157, 0.08);
+  border: 1px solid rgba(69, 123, 157, 0.18);
   color: var(--color-secondary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s;
+  font-weight: 700;
+}
+
+.event-card:hover .event-summary h3 {
+  color: var(--color-primary);
 }
 
 .event-card:hover .expand-btn {
   background: var(--color-secondary);
   color: white;
+}
+
+.event-card:focus-visible {
+  outline: 3px solid rgba(69, 123, 157, 0.22);
+  outline-offset: 4px;
+  transform: translateX(4px);
 }
 
 .event-details {
@@ -155,7 +256,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
   color: var(--color-text-muted);
 }
 
@@ -164,10 +265,11 @@
   display: flex;
   gap: 0.5rem;
   align-items: flex-start;
-  background: var(--color-background);
-  padding: 1rem;
-  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
   color: var(--color-text);
+  border: 1px solid rgba(69, 123, 157, 0.1);
 }
 
 .info-icon {
@@ -182,12 +284,50 @@
 }
 
 @media (max-width: 768px) {
+  .program-page {
+    padding: 3rem 1rem;
+  }
+
+  .program-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .date-tabs {
+    justify-content: flex-start;
+    padding: 0.75rem;
+  }
+
+  .date-tab {
+    min-width: 150px;
+    padding: 0.9rem 1rem;
+  }
+
   .timeline-event {
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .timeline-event::before {
+    display: none;
+  }
+
   .event-time {
     padding-top: 0;
     font-size: 0.9rem;
+    position: static;
+  }
+
+  .event-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .event-summary h3 {
+    font-size: 1rem;
+  }
+
+  .expand-btn {
+    width: 100%;
   }
 }

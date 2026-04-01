@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.css';
 import { Target, Users, BookOpen, Globe } from 'lucide-react';
 
@@ -18,7 +17,7 @@ const About = () => {
           </div>
           <p>
             TÜBİTAK 4004 Doğa Eğitimi ve Bilim Okulları Destekleme Programı kapsamında hazırlanan 
-            "Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek" projesinin temel amacı,
+            &quot;Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek&quot; projesinin temel amacı,
             katılımcı öğrencilerin küresel iklim değişikliği ve doğa üzerindeki etkileri hakkında bilimsel bilgi 
             birikimlerini artırmaktır. Proje, fen, sanat ve felsefeyi bir araya getirerek doğayı farklı bir 
             gözle görmelerini sağlamayı hedeflemektedir.
@@ -32,7 +31,7 @@ const About = () => {
           </div>
           <p>
             Projemizin hedef kitlesi, Manisa ilindeki devlet okullarında öğrenim gören, özellikle kırsal alanlarda 
-            (köy okullarında) yaşayan dezavantajlı öğrenciler ile Bilim ve Sanat Merkezi'ne (BİLSEM) devam eden 
+            (köy okullarında) yaşayan dezavantajlı öğrenciler ile Bilim ve Sanat Merkezi&apos;ne (BİLSEM) devam eden 
             <strong> 7. sınıf</strong> öğrencilerinden oluşan toplam 36 kişilik bir gruptur. Bu sayede farklı sosyo-ekonomik 
             altyapılardan gelen öğrencilerin kaynaşması ve ortak bir çevre bilinci geliştirmeleri amaçlanmaktadır.
           </p>
@@ -47,7 +46,7 @@ const About = () => {
             5 günlük yoğun kamp süresince, öğrenciler ezberci bir eğitim yerine; aktif katılım, gözlem, ölçüm, 
             ve tartışma (P4C - Çocuklar İçin Felsefe) tekniklerinin kullanıldığı, disiplinlerarası (fen bilimleri, görsel sanatlar, felsefe vb.) 
             bir doğa eğitimi programı ile buluşacaklardır. Eğitimler; Spil Dağı, Kozak Yaylası, Kırkağaç Çam Korusu ve 
-            Sevişler Baraj Gölü olmak üzere Manisa'nın dört farklı ekosisteminde gerçekleştirilecektir.
+            Sevişler Baraj Gölü olmak üzere Manisa&apos;nın dört farklı ekosisteminde gerçekleştirilecektir.
           </p>
         </section>
 
@@ -57,7 +56,7 @@ const About = () => {
             <h2>Manifestomuz</h2>
           </div>
           <blockquote>
-            "Ekolojik krizin bir parçası olmak yerine, çözümün bir parçası olabiliriz. Bugünün doğa kaşifleri, yarının sürdürülebilir dünyasının elçileri olacak."
+            &quot;Ekolojik krizin bir parçası olmak yerine, çözümün bir parçası olabiliriz. Bugünün doğa kaşifleri, yarının sürdürülebilir dünyasının elçileri olacak.&quot;
           </blockquote>
         </section>
       </div>

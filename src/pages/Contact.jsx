@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Mail, Phone } from 'lucide-react';
 import './Contact.css';
 
@@ -6,6 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-header">
+        <div className="contact-kicker">Sorular, başvuru ve proje detayları</div>
         <h1>İletişim</h1>
         <p>Proje detayları ve sorularınız için bizimle iletişime geçebilirsiniz</p>
       </div>
@@ -13,6 +13,7 @@ const Contact = () => {
       <div className="contact-grid">
         <div className="contact-info glass-panel">
           <h2>İletişim Bilgileri</h2>
+          <p className="contact-intro">Proje merkezi Soma Bilim ve Sanat Merkezi&apos;dir. En hızlı geri dönüş için e-posta kanalını kullanabilirsiniz.</p>
           
           <div className="info-item">
             <div className="info-icon-wrapper">
@@ -30,7 +31,7 @@ const Contact = () => {
             </div>
             <div>
               <h3>E-Posta Adresimiz</h3>
-              <p>info@doganinsesiweb.org<br/>kerimbeyge@gmail.com</p>
+              <p><a href="mailto:kerimbeyge@gmail.com">kerimbeyge@gmail.com</a></p>
             </div>
           </div>
 
@@ -40,12 +41,16 @@ const Contact = () => {
             </div>
             <div>
               <h3>Telefon</h3>
-              <p>+90 (236) 613 00 00</p>
+              <p>İletişim detayları yakında eklenecektir.</p>
             </div>
           </div>
         </div>
 
         <div className="contact-map glass-panel">
+          <div className="map-caption">
+            <span>Proje Merkezi</span>
+            <strong>Soma Bilim ve Sanat Merkezi</strong>
+          </div>
           <div className="map-placeholder">
              <iframe 
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.804961917387!2d27.604118876403064!3d39.183707871660144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b98436cd970bc3%3A0x6d90ddafcb1f0ab9!2sSoma%20Bilim%20ve%20Sanat%20Merkezi!5e0!3m2!1str!2str!4v1703248383210!5m2!1str!2str" 

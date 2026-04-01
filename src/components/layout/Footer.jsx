@@ -1,15 +1,14 @@
-import React from 'react';
 import './Footer.css';
 import './Logos.css';
 
 // Logo Imports
-import logoKaymakamlik from '../../assets/images/logos/soma_kaymakamlik.png';
+import logoKaymakamlik from '../../assets/images/logos/soma_kaymakamlik_optimized.png';
 import logoUni from '../../assets/images/logos/balikesir_uni.png';
-import logoBelediye from '../../assets/images/logos/soma_belediye.png';
+import logoBelediye from '../../assets/images/logos/soma_belediye_optimized.png';
 import logoDKMP from '../../assets/images/logos/dkmp.png';
-import logoMEB from '../../assets/images/logos/soma_meb.png';
+import logoMEB from '../../assets/images/logos/soma_meb_optimized.png';
 import logoSpil from '../../assets/images/logos/spil_dag.png';
-import logoOrman from '../../assets/images/logos/soma_orman.png';
+import logoOrman from '../../assets/images/logos/soma_orman_optimized.png';
 import logoSaglik from '../../assets/images/logos/soma_saglik.png';
 
 const institutions = [
@@ -36,6 +35,8 @@ const Footer = () => {
                   src={inst.src} 
                   alt={inst.name} 
                   className="footer-inst-logo" 
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => e.target.style.display='none'}
                 />
                 <span className="footer-logo-text-fallback">{inst.name}</span>

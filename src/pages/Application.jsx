@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink, FileText, Download, CheckCircle } from 'lucide-react';
 import './Application.css';
 
@@ -14,7 +13,7 @@ const Application = () => {
         <section className="app-criteria glass-panel">
           <h2>Seçim Kriterleri</h2>
           <ul className="criteria-list">
-            <li><CheckCircle size={20} className="icon-check" /> Manisa ilindeki devlet okullarında veya Soma BİLSEM'de öğrenim gören 7. sınıf öğrencisi olmak.</li>
+            <li><CheckCircle size={20} className="icon-check" /> Manisa ilindeki devlet okullarında veya Soma BİLSEM&apos;de öğrenim gören 7. sınıf öğrencisi olmak.</li>
             <li><CheckCircle size={20} className="icon-check" /> Doğa, iklim değişikliği ve bilimsel çalışmalara ilgi duymak.</li>
             <li><CheckCircle size={20} className="icon-check" /> Kamp süresince gerçekleştirilecek açık alan ve doğa etkinliklerine sağlık engeli bulunmamak.</li>
           </ul>
@@ -22,21 +21,25 @@ const Application = () => {
 
         <section className="app-forms">
           <h2>İndirilmesi Gereken Belgeler</h2>
-          <p>Lütfen online başvuru formunu doldurmadan önce aşağıdaki belgeleri indirip velinize onaylatınız.</p>
+          <p>Lütfen online başvuru formunu doldurmadan önce aşağıdaki belgeleri inceleyiniz. PDF dosyaları yayınlandığında bu alandan indirilebilecektir.</p>
           
           <div className="docs-grid">
             <div className="doc-card glass-panel">
               <FileText size={40} className="doc-icon" />
               <h3>Veli İzin Belgesi</h3>
               <p>Öğrencinin TÜBİTAK doğa eğitim kampına katılması için veli muvafakatnamesi / yasal vesayet formu.</p>
-              <button className="btn-download"><Download size={16}/> İndir (PDF)</button>
+              <button className="btn-download" type="button" disabled aria-disabled="true">
+                <Download size={16}/> PDF Yakında Eklenecek
+              </button>
             </div>
             
             <div className="doc-card glass-panel">
               <FileText size={40} className="doc-icon" />
               <h3>Diğer İzin Belgeleri</h3>
               <p>KVKK aydınlatma metni, ses/görüntü kayıt izni ve alerji beyan formlarını içeren evrak paketi.</p>
-              <button className="btn-download"><Download size={16}/> İndir (PDF)</button>
+              <button className="btn-download" type="button" disabled aria-disabled="true">
+                <Download size={16}/> PDF Yakında Eklenecek
+              </button>
             </div>
           </div>
         </section>

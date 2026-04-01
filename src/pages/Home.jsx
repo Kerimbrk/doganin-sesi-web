@@ -1,8 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, BookOpen, CalendarDays, Leaf, MapPin, Users } from 'lucide-react';
 import './Home.css';
-import heroImage from '../assets/images/hero_banner.png';
+import heroImage from '../assets/images/hero_banner.jpg';
 
 const Home = () => {
+  const targetDateLabel = '29 Haziran 2026';
+  const programCards = [
+    {
+      title: 'Proje Hakkında',
+      description: 'Amaç, hedef kitle ve eğitim yaklaşımımızı kısa ve anlaşılır biçimde inceleyin.',
+      icon: BookOpen,
+      link: '/hakkimizda',
+      cta: 'Detayları İncele',
+    },
+    {
+      title: 'Etkinlik Takvimi',
+      description: '5 günlük kamp akışını, saha çalışmalarını ve atölye planını adım adım görün.',
+      icon: CalendarDays,
+      link: '/program',
+      cta: 'Takvimi Aç',
+    },
+    {
+      title: 'Başvuru ve Kayıt',
+      description: 'Katılım şartlarını öğrenin, belgeleri inceleyin ve başvuru formuna ulaşın.',
+      icon: Users,
+      link: '/basvuru',
+      cta: 'Başvuruya Git',
+    },
+  ];
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -37,12 +64,18 @@ const Home = () => {
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-overlay">
           <div className="hero-content glass-panel">
+            <div className="hero-kicker">Sevgili öğrencilerimiz ve öğretmenlerimiz</div>
             <h1>Doğanın Sesi</h1>
             <h2>İklim Değişikliğini Anlamak ve Öğrenmek I</h2>
-            <p>Sanayi devriminden günümüze uzanan ekolojik krizi ve biyoçeşitlilik kaybını disiplinlerarası doğa eğitimiyle keşfedin.</p>
+            <p>Doğa eğitimi, bilim, sanat ve ekolojik okuryazarlığı bir araya getiren bu kamp portalında proje içeriğini, takvimi ve başvuru adımlarını tek yerden keşfedin.</p>
+            <div className="hero-highlights">
+              <span>36 öğrenci</span>
+              <span>5 gün</span>
+              <span>4 ekosistem</span>
+            </div>
             <div className="hero-actions">
-              <button className="btn-primary">Başvuru Şartları</button>
-              <button className="btn-secondary">Etkinlik Programı</button>
+              <Link to="/basvuru" className="btn-primary">Başvuru Şartları</Link>
+              <Link to="/program" className="btn-secondary">Etkinlik Programı</Link>
             </div>
             <div className="countdown">
               <span className="countdown-label">Kamp Başlangıcına Kalan:</span>
@@ -64,28 +97,88 @@ const Home = () => {
                   <span className="label">Sn</span>
                 </div>
               </div>
+              <span className="countdown-date">{targetDateLabel} tarihinde başlıyor</span>
             </div>
           </div>
         </div>
       </section>
-      
-      <section className="features-section">
+
+      <section className="portal-section">
         <div className="container">
-          <h2 className="section-title">Biz Ne Yapıyoruz?</h2>
-          <div className="features-grid">
-            <div className="feature-card glass-panel">
-              <h3>Disiplinlerarası Eğitim</h3>
-              <p>Fen, felsefe ve sanatın birleştiği zengin bir doğa eğitimi programı ile iklim değişikliğinin etkilerini yerinde inceliyoruz.</p>
-            </div>
-            <div className="feature-card glass-panel">
-              <h3>Dört Farklı Ekosistem</h3>
-              <p>Spil Dağı, Kozak Yaylası, Kırkağaç Çam Korusu ve Sevişler Baraj Gölü'nde uygulamalı saha/laboratuvar çalışmaları.</p>
-            </div>
-            <div className="feature-card glass-panel">
-              <h3>Topluma Yaygınlaştırma</h3>
-              <p>Öğrendiklerimizi okullarımızda ve çevremizde uygulayarak sürdürülebilir bir gelecek için farkındalık elçileri oluyoruz.</p>
-            </div>
+          <div className="section-heading">
+            <span className="section-kicker">Eğitim Portalı</span>
+            <h2 className="section-title">Program Akışına Buradan Ulaşın</h2>
+            <p className="section-description">Referans sitedeki gibi temel bilgilere hızlı erişim sağlayan bir portal düzeni oluşturduk. En önemli başlıklara aşağıdan doğrudan geçebilirsiniz.</p>
           </div>
+
+          <div className="program-grid">
+            {programCards.map(({ title, description, icon: Icon, link, cta }) => (
+              <article key={title} className="program-card glass-panel">
+                <div className="program-icon">
+                  <Icon size={24} />
+                </div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <Link to={link} className="text-link">
+                  {cta}
+                  <ArrowRight size={16} />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="content-showcase">
+        <div className="container showcase-grid">
+          <article className="showcase-card feature-story glass-panel">
+            <span className="section-kicker">Mutlaka Göz Atın</span>
+            <h3>Disiplinlerarası doğa eğitimi ile sahada öğrenme</h3>
+            <p>Fen, sanat ve felsefeyi bir araya getiren kamp yapımız sayesinde öğrenciler yalnızca bilgi edinmiyor; gözlem yapıyor, tartışıyor ve üretiyor.</p>
+            <div className="showcase-meta">
+              <span><Leaf size={16} /> Spil Dağı ve Kozak Yaylası</span>
+              <span><Users size={16} /> 7. sınıf öğrencileri</span>
+            </div>
+            <Link to="/hakkimizda" className="showcase-button">Program Yaklaşımını İncele</Link>
+          </article>
+
+          <article className="showcase-card literacy-card glass-panel">
+            <span className="section-kicker">Ekolojik Okuryazarlık</span>
+            <h3>Çocuklarla iklim değişikliğini konuşmanın yaratıcı yolları</h3>
+            <p>Katılımcılar iklim krizini korku diliyle değil; keşif, merak, bilimsel düşünme ve ortak sorumluluk duygusuyla ele alacak bir öğrenme deneyimi yaşayacak.</p>
+            <blockquote>
+              “Bugünün doğa kaşifleri, yarının sürdürülebilir dünyasının elçileri olacak.”
+            </blockquote>
+            <Link to="/ekibimiz" className="text-link">
+              Eğitmen Kadrosunu Gör
+              <ArrowRight size={16} />
+            </Link>
+          </article>
+        </div>
+      </section>
+
+      <section className="calendar-section">
+        <div className="container calendar-grid">
+          <article className="calendar-card glass-panel">
+            <span className="section-kicker">Doğa Takvimi</span>
+            <h3>29 Haziran - 3 Temmuz 2026</h3>
+            <p>Kamp; Soma BİLSEM, Sevişler Baraj Gölü, Kırkağaç Çam Korusu, Kozak Yaylası ve Spil Dağı&apos;nda gerçekleşecek etkinliklerle ilerler.</p>
+            <div className="calendar-highlights">
+              <span><CalendarDays size={16} /> 25 etkinlik</span>
+              <span><MapPin size={16} /> 5 farklı uygulama alanı</span>
+            </div>
+            <Link to="/program" className="showcase-button">Takvimin Tamamını Aç</Link>
+          </article>
+
+          <article className="calendar-card contact-cta glass-panel">
+            <span className="section-kicker">Bize Ulaşın</span>
+            <h3>Sorularınız için proje ekibimiz burada</h3>
+            <p>Başvuru koşulları, takvim ve içerik hakkında daha fazla bilgi almak için iletişim sayfasından bize ulaşabilirsiniz.</p>
+            <Link to="/iletisim" className="text-link">
+              İletişim Bilgilerine Git
+              <ArrowRight size={16} />
+            </Link>
+          </article>
         </div>
       </section>
     </div>

@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Program.css';
 import scheduleData from '../data/schedule.json';
 import { Calendar, MapPin, Clock, Info, User } from 'lucide-react';
+
+const formatDateLabel = (dateString) => {
+  const [day, month, year] = dateString.split('/');
+  const parsedDate = new Date(`${year}-${month}-${day}T12:00:00`);
+
+  return new Intl.DateTimeFormat('tr-TR', {
+    day: 'numeric',
+    month: 'long',
+    weekday: 'long',
+  }).format(parsedDate);
+};
 
 // Etkinlikleri günlere (tarihlere) göre gruplayalım
 const groupedSchedule = scheduleData.reduce((acc, event) => {
@@ -11,6 +22,7 @@ const groupedSchedule = scheduleData.reduce((acc, event) => {
 }, {});
 
 const Program = () => {
+  const totalEventCount = scheduleData.length;
   const [activeDate, setActiveDate] = useState(Object.keys(groupedSchedule)[0]);
   const [expandedEventId, setExpandedEventId] = useState(null);
 
@@ -21,8 +33,23 @@ const Program = () => {
   return (
     <div className="program-page">
       <div className="program-header">
+        <div className="program-kicker">5 günlük saha ve atölye akışı</div>
         <h1>Etkinlik Takvimi</h1>
         <p>5 günlük yoğun ve eğlenceli iklim değişikliği eğitim programı planı</p>
+        <div className="program-summary">
+          <div className="summary-pill">
+            <strong>Toplam</strong>
+            <span>{totalEventCount} etkinlik</span>
+          </div>
+          <div className="summary-pill">
+            <strong>Başlangıç</strong>
+            <span>{formatDateLabel(Object.keys(groupedSchedule)[0])}</span>
+          </div>
+          <div className="summary-pill">
+            <strong>Merkez</strong>
+            <span>Soma BİLSEM</span>
+          </div>
+        </div>
       </div>
 
       <div className="program-container">
@@ -33,10 +60,11 @@ const Program = () => {
               key={date}
               className={`date-tab ${activeDate === date ? 'active' : ''}`}
               onClick={() => setActiveDate(date)}
+              type="button"
             >
               <Calendar size={18} />
               <span>{index + 1}. Gün</span>
-              <small>{date}</small>
+              <small>{formatDateLabel(date)}</small>
             </button>
           ))}
         </div>
@@ -61,10 +89,22 @@ const Program = () => {
                 <div 
                   className="event-card glass-panel" 
                   onClick={() => toggleEvent(event.id)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(eventKey) => {
+                    if (eventKey.key === 'Enter' || eventKey.key === ' ') {
+                      eventKey.preventDefault();
+                      toggleEvent(event.id);
+                    }
+                  }}
+                  aria-expanded={isExpanded}
                 >
                   <div className="event-summary">
-                    <h3>{displayTitle}</h3>
-                    <button className="expand-btn">
+                    <div className="event-copy">
+                      <span className="event-badge">{formatDateLabel(event.date)}</span>
+                      <h3>{displayTitle}</h3>
+                    </div>
+                    <button className="expand-btn" type="button" tabIndex={-1}>
                       {isExpanded ? 'Gizle' : 'Detaylar'}
                     </button>
                   </div>
