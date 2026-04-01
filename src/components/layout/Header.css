@@ -224,20 +224,32 @@
     margin: 0.35rem 0.5rem 0.6rem;
   }
 
+  .header-top {
+    padding: 0.42rem;
+  }
+
+  .header-showcase {
+    gap: 0.45rem;
+  }
+
   .project-title {
-    font-size: 1.55rem;
+    font-size: 1.3rem;
   }
 
   .project-subtitle {
-    font-size: 0.74rem;
+    display: none;
   }
 
   .project-chip {
-    font-size: 0.58rem;
+    display: none;
+  }
+
+  .project-badge {
+    padding: 0.55rem 0.7rem;
   }
 
   .brand-text {
-    font-size: 0.94rem;
+    font-size: 0.82rem;
     text-align: center;
     max-width: 100%;
   }

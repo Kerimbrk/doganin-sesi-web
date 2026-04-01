@@ -365,17 +365,22 @@
 
 @media (max-width: 768px) {
   .hero-content {
-    padding: 2.25rem 1.3rem;
+    padding: 1.75rem 1.1rem;
   }
 
   .hero-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+  }
+
+  .hero-content p {
+    font-size: 0.98rem;
+    line-height: 1.6;
   }
 
   .portal-section,
   .content-showcase,
   .calendar-section {
-    padding: 3.5rem 1rem 0;
+    padding: 3rem 1rem 0;
   }
 
   .program-card,
@@ -386,17 +391,47 @@
 }
 
 @media (max-width: 640px) {
+  .hero-section {
+    min-height: auto;
+    padding: 1.25rem 0.75rem 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-highlights {
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-highlights span {
+    font-size: 0.78rem;
+    padding: 0.55rem 0.7rem;
+  }
+
   .hero-actions {
     flex-direction: column;
+    margin-bottom: 1.35rem;
   }
 
   .hero-actions .btn-primary,
   .hero-actions .btn-secondary {
     width: 100%;
     min-width: 0;
+    padding: 0.78rem 1rem;
   }
 
   .countdown-item {
-    min-width: 70px;
+    min-width: 64px;
+    padding: 0.65rem 0.65rem;
+  }
+
+  .countdown-item .num {
+    font-size: 1.45rem;
+  }
+
+  .countdown-date {
+    font-size: 0.84rem;
   }
 }

@@ -105,12 +105,6 @@ const Home = () => {
 
       <section className="portal-section">
         <div className="container">
-          <div className="section-heading">
-            <span className="section-kicker">Eğitim Portalı</span>
-            <h2 className="section-title">Program Akışına Buradan Ulaşın</h2>
-            <p className="section-description">Referans sitedeki gibi temel bilgilere hızlı erişim sağlayan bir portal düzeni oluşturduk. En önemli başlıklara aşağıdan doğrudan geçebilirsiniz.</p>
-          </div>
-
           <div className="program-grid">
             {programCards.map(({ title, description, icon: Icon, link, cta }) => (
               <article key={title} className="program-card glass-panel">
