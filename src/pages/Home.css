@@ -1,0 +1,127 @@
+.hero-section {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -120px; /* pull under the header assuming reasonable header height */
+  padding-top: 120px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(27, 67, 50, 0.7) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 3rem;
+  max-width: 800px;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  color: var(--color-accent-light);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.countdown {
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.countdown strong {
+  color: var(--color-accent-light);
+  margin-left: 0.5rem;
+}
+
+.features-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2.5rem;
+  text-align: center;
+  background: rgba(248, 250, 252, 0.8);
+}
+
+.feature-card h3 {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: var(--color-text-muted);
+}

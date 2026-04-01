@@ -1,0 +1,40 @@
+.site-footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logos h4 {
+  color: var(--color-accent-light);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.footer-logos .logo-placeholder {
+  border-color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.8);
+  font-size: 0.8rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+}

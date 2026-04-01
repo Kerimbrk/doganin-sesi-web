@@ -1,0 +1,83 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logos-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo-placeholder {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-text-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.brand-icon {
+  color: var(--color-primary-light);
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-light);
+  transform: translateY(-1px);
+}
