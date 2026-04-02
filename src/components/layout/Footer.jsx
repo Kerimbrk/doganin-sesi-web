@@ -15,8 +15,8 @@ import logoOrman from '../../assets/images/logos/soma_orman_optimized.png';
 import logoSaglik from '../../assets/images/logos/soma_saglik.png';
 
 const institutions = [
-  { src: logoTubitak },
-  { src: logoBilsem },
+  { src: logoTubitak, logoClassName: 'footer-inst-logo blend-logo' },
+  { src: logoBilsem, logoClassName: 'footer-inst-logo flat-logo' },
   { src: logoKaymakamlik },
   { src: logoUni },
   { src: logoBelediye },
@@ -41,7 +41,7 @@ const Footer = () => {
                 <img 
                   src={inst.src} 
                   alt={copy.footer.institutions[index]} 
-                  className="footer-inst-logo" 
+                  className={inst.logoClassName || 'footer-inst-logo'} 
                   loading="lazy"
                   decoding="async"
                   onError={(e) => e.target.style.display='none'}

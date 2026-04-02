@@ -40,7 +40,7 @@
 }
 
 .footer-logo-box {
-  background: rgba(255, 255, 255, 0.08);
+  background: transparent;
   padding: 1rem;
   border-radius: 8px;
   display: flex;
@@ -48,11 +48,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  transition: background 0.3s ease;
-}
-
-.footer-logo-box:hover {
-  background: rgba(255, 255, 255, 0.15);
 }
 
 .footer-inst-logo {
@@ -60,6 +55,15 @@
   max-height: 60px;
   object-fit: contain;
   margin-bottom: 8px;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.08));
+}
+
+.footer-inst-logo.blend-logo {
+  mix-blend-mode: multiply;
+}
+
+.footer-inst-logo.flat-logo {
+  background: transparent;
 }
 
 .footer-logo-text-fallback {
