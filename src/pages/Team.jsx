@@ -5,7 +5,7 @@ import imgDilek from '../assets/images/team/dilek_hoca.jpg';
 import imgHakan from '../assets/images/team/hakan_hoca_optimized.jpg';
 import imgHandan from '../assets/images/team/handan_hoca.jpeg';
 import imgHulya from '../assets/images/team/hulya_hoca.jpeg';
-import imgKerim from '../assets/images/team/kerim_hoca_updated.jpg';
+import imgKerim from '../assets/images/team/kerim_hoca.jpeg';
 import imgNazire from '../assets/images/team/nazire_hoca.jpeg';
 import imgNicklas from '../assets/images/team/nicklas_hoca.avif';
 import imgSakin from '../assets/images/team/sakin_hoca.jpeg';
