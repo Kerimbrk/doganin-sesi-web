@@ -3,6 +3,8 @@ import './Logos.css';
 import { useLanguage } from '../../context/useLanguage';
 
 // Logo Imports
+import logoTubitak from '../../assets/images/logos/tubitak.png';
+import logoBilsem from '../../assets/images/logos/soma_bilsem_optimized.png';
 import logoKaymakamlik from '../../assets/images/logos/soma_kaymakamlik_optimized.png';
 import logoUni from '../../assets/images/logos/balikesir_uni.png';
 import logoBelediye from '../../assets/images/logos/soma_belediye_optimized.png';
@@ -13,6 +15,8 @@ import logoOrman from '../../assets/images/logos/soma_orman_optimized.png';
 import logoSaglik from '../../assets/images/logos/soma_saglik.png';
 
 const institutions = [
+  { src: logoTubitak },
+  { src: logoBilsem },
   { src: logoKaymakamlik },
   { src: logoUni },
   { src: logoBelediye },

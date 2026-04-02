@@ -26,6 +26,8 @@ export const translations = {
       title: 'Destekleyen Kurum ve Kuruluşlar',
       copyright: '© 2026 Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek I. TÜBİTAK 4004 Projesi.',
       institutions: [
+        'TÜBİTAK',
+        'Soma BİLSEM',
         'Soma Kaymakamlığı',
         'Balıkesir Üniversitesi',
         'Soma Belediyesi',
@@ -257,6 +259,8 @@ export const translations = {
       title: 'Supporting Institutions and Organizations',
       copyright: '© 2026 Voice of Nature: Understanding and Learning Climate Change I. TUBITAK 4004 Project.',
       institutions: [
+        'TUBITAK',
+        'Soma BILSEM',
         'Soma District Governorate',
         'Balikesir University',
         'Soma Municipality',
