@@ -1,8 +1,43 @@
-# React + Vite
+# Doganin Sesi Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje `React + Vite` ile hazırlanmış statik bir web sitesidir.
 
-Currently, two official plugins are available:
+## Local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+Build çıktısı `dist/` klasörüne alınır.
+
+## Cloudflare Pages
+
+Bu proje Cloudflare Pages için hazırdır.
+
+Kullanılacak ayarlar:
+
+- Framework preset: `Vite` veya `React (Vite)`
+- Production branch: `main`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: boş bırakılabilir
+
+Notlar:
+
+- `public/_redirects` dosyası mevcut olduğu için SPA yönlendirmesi hazırdır.
+- Her yeni `main` push işleminde Cloudflare Pages otomatik deploy alabilir.
+- Proje yayınlandıktan sonra varsayılan alan adı `*.pages.dev` olacaktır.
+
+## Kaynak
+
+Cloudflare Pages resmi dokümanına göre `React (Vite)` projeleri için build komutu `npm run build`, çıktı klasörü ise `dist` olmalıdır:
+
+- https://developers.cloudflare.com/pages/configuration/build-configuration/
+- https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/
