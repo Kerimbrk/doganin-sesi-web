@@ -41,3 +41,22 @@ Cloudflare Pages resmi dokümanına göre `React (Vite)` projeleri için build k
 
 - https://developers.cloudflare.com/pages/configuration/build-configuration/
 - https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/
+
+## GitHub Pages
+
+Bu repo GitHub Pages için de hazırlanmıştır.
+
+Kullanılan yapı:
+
+- GitHub Pages build sırasında `base` otomatik olarak `/doganin-sesi-web/` olur
+- `github.io` alanında yönlendirme sorunu yaşamamak için uygulama `HashRouter` ile açılır
+- deploy işlemi `.github/workflows/deploy-github-pages.yml` ile otomatik yapılır
+
+GitHub tarafında açılması gereken ayar:
+
+- `Settings > Pages > Source`
+- `GitHub Actions`
+
+Repo:
+
+- `https://github.com/Kerimbrk/doganin-sesi-web`

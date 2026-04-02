@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -33,12 +33,14 @@ const AppRoutes = () => {
 };
 
 function App() {
+  const Router = window.location.hostname.endsWith('github.io') ? HashRouter : BrowserRouter;
+
   return (
-    <BrowserRouter>
+    <Router>
       <LanguageProvider>
         <AppRoutes />
       </LanguageProvider>
-    </BrowserRouter>
+    </Router>
   );
 }
 
