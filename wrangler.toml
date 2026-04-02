@@ -1,6 +1,3 @@
 name = "doganinsesi4004"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-04-02"
-
-[assets]
-directory = "./dist"
