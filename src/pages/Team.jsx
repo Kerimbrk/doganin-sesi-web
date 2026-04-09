@@ -6,11 +6,17 @@ import imgHakan from '../assets/images/team/hakan_hoca_optimized.jpg';
 import imgHandan from '../assets/images/team/handan_hoca.jpeg';
 import imgHulya from '../assets/images/team/hulya_hoca.jpeg';
 import imgKerim from '../assets/images/team/kerim_hoca.jpeg';
-import imgNazire from '../assets/images/team/nazire_hoca.jpeg';
+import imgNazire from '../assets/images/team/nazire_hoca.jpg';
 import imgNicklas from '../assets/images/team/nicklas_hoca.avif';
 import imgSakin from '../assets/images/team/sakin_hoca.jpeg';
 import imgSelami from '../assets/images/team/selami_hoca.jpg';
 import imgTaner from '../assets/images/team/taner_hoca_optimized.jpg';
+import imgBayram from '../assets/images/team/bayram_hoca.jpg';
+import imgEnise from '../assets/images/team/enise_hoca.jpg';
+import imgErtan from '../assets/images/team/ertan_hoca.jpg';
+import imgFaysal from '../assets/images/team/faysal_hoca.jpg';
+import imgGul from '../assets/images/team/gul_hoca.jpg';
+import imgSeyma from '../assets/images/team/seyma_hoca.jpg';
 
 const getAcademicRank = (name) => {
   if (name.startsWith('Prof. Dr.')) return 0;
@@ -43,13 +49,13 @@ const teamData = {
   guides: [
     { id: 11, roleKey: 'guide', name: 'Nazire Taşkın', titleKey: 'guide', image: imgNazire },
     { id: 15, roleKey: 'guide', name: 'Derya Deniz Karameşe', titleKey: 'guide', image: null },
-    { id: 16, roleKey: 'guide', name: 'Şeyma Yeşil', titleKey: 'guide', image: null },
-    { id: 17, roleKey: 'guide', name: 'Ertan Öz', titleKey: 'guide', image: null },
-    { id: 18, roleKey: 'guide', name: 'Fadime Gül Ökten', titleKey: 'guide', image: null },
+    { id: 16, roleKey: 'guide', name: 'Şeyma Yeşil', titleKey: 'guide', image: imgSeyma },
+    { id: 17, roleKey: 'guide', name: 'Ertan Öz', titleKey: 'guide', image: imgErtan },
+    { id: 18, roleKey: 'guide', name: 'Fadime Gül Ökten', titleKey: 'guide', image: imgGul },
     { id: 19, roleKey: 'guide', name: 'Ayşe Altun', titleKey: 'guide', image: null },
-    { id: 20, roleKey: 'guide', name: 'Bayram Gülcan', titleKey: 'guide', image: null },
-    { id: 21, roleKey: 'guide', name: 'Enise Ulu Çoğalan', titleKey: 'guide', image: null },
-    { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: null },
+    { id: 20, roleKey: 'guide', name: 'Bayram Gülcan', titleKey: 'guide', image: imgBayram },
+    { id: 21, roleKey: 'guide', name: 'Enise Ulu Çoğalan', titleKey: 'guide', image: imgEnise },
+    { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: imgFaysal },
   ],
   healthPersonnel: [
     { id: 30, roleKey: 'health', name: 'Dr. Emre Tufan', titleKey: 'health', image: null },
