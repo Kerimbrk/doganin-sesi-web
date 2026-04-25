@@ -7,7 +7,7 @@ import { useLanguage } from '../../context/useLanguage';
 
 // Logo Imports
 import tubitakLogo from '../../assets/images/logos/tubitak.png';
-// import tubitak4004Logo from '../../assets/images/logos/tubitak_4004.png'; // File missing, commented out to fix build
+import tubitak4004Logo from '../../assets/images/logos/4004_LOGO_2.png';
 import bilsemLogo from '../../assets/images/logos/soma_bilsem_optimized.png';
 
 const Header = () => {
@@ -36,10 +36,14 @@ const Header = () => {
           </div>
 
           <div className="project-badge">
-            <span className="project-kicker">{copy.header.projectKicker}</span>
-            <h1 className="project-title">{copy.header.projectTitle}</h1>
-            <p className="project-subtitle">{copy.header.projectSubtitle}</p>
-            <span className="project-chip">{copy.header.projectChip}</span>
+            <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="badge-side-logo" decoding="async" />
+            <div className="project-badge-content">
+              <span className="project-kicker">{copy.header.projectKicker}</span>
+              <h1 className="project-title">{copy.header.projectTitle}</h1>
+              <p className="project-subtitle">{copy.header.projectSubtitle}</p>
+              <span className="project-chip">{copy.header.projectChip}</span>
+            </div>
+            <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="badge-side-logo" decoding="async" />
           </div>
 
           <div className="logo-box logo-box-side">
