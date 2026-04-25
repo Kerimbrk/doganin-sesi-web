@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Colors */
-  --color-primary: #1B4332;
-  --color-primary-light: #2D6A4F;
-  --color-secondary: #457B9D;
-  --color-secondary-light: #A8DADC;
+  /* Colors - TÜBİTAK 4004 Theme */
+  --color-primary: #e30613;
+  --color-primary-light: #f94144;
+  --color-secondary: #1B4332;
+  --color-secondary-light: #457B9D;
   --color-accent: #E07A5F;
   --color-accent-light: #F4A261;
-  --color-background: #F8FAFC;
+  --color-background: #FDFDFD;
   --color-surface: #FFFFFF;
-  --color-text: #1E293B;
-  --color-text-muted: #64748B;
+  --color-text: #171717;
+  --color-text-muted: #555555;
   
   /* Fonts */
   --font-heading: 'Outfit', sans-serif;
@@ -24,7 +24,7 @@
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  --gradient-soft: radial-gradient(circle at top, rgba(168, 218, 220, 0.35), transparent 45%), linear-gradient(180deg, #f7faf8 0%, #eef5f2 100%);
+  --gradient-soft: radial-gradient(circle at top, rgba(227, 6, 19, 0.08), transparent 45%), linear-gradient(180deg, #fafafa 0%, #fefcfc 100%);
 }
 
 * {
