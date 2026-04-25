@@ -30,25 +30,33 @@ const Header = () => {
     <header className={`site-header glass-panel${isScrolled ? ' is-scrolled' : ''}`}>
       <div className="header-top">
         <div className="header-showcase">
-          <div className="logo-box logo-box-side">
-            <img src={tubitakLogo} alt="TÜBİTAK" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
-            <span className="logo-text-fallback">TÜBİTAK</span>
+          <div className="side-logos-container">
+            <div className="logo-box logo-box-side">
+              <img src={tubitakLogo} alt="TÜBİTAK" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
+              <span className="logo-text-fallback">TÜBİTAK</span>
+            </div>
+            <div className="logo-box logo-transparent">
+              <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="inst-logo tubitak-4004-logo" decoding="async" />
+            </div>
           </div>
 
           <div className="project-badge">
-            <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="badge-side-logo" decoding="async" />
             <div className="project-badge-content">
               <span className="project-kicker">{copy.header.projectKicker}</span>
               <h1 className="project-title">{copy.header.projectTitle}</h1>
               <p className="project-subtitle">{copy.header.projectSubtitle}</p>
               <span className="project-chip">{copy.header.projectChip}</span>
             </div>
-            <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="badge-side-logo" decoding="async" />
           </div>
 
-          <div className="logo-box logo-box-side">
-            <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
-            <span className="logo-text-fallback">Soma BİLSEM</span>
+          <div className="side-logos-container">
+            <div className="logo-box logo-transparent">
+              <img src={tubitak4004Logo} alt="TÜBİTAK 4004 Logo" className="inst-logo tubitak-4004-logo" decoding="async" />
+            </div>
+            <div className="logo-box logo-box-side">
+              <img src={bilsemLogo} alt="Soma BİLSEM" className="inst-logo" decoding="async" onError={(e) => e.target.style.display='none'} />
+              <span className="logo-text-fallback">Soma BİLSEM</span>
+            </div>
           </div>
         </div>
       </div>
