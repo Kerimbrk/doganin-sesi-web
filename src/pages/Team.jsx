@@ -17,6 +17,10 @@ import imgErtan from '../assets/images/team/ertan_hoca.jpg';
 import imgFaysal from '../assets/images/team/faysal_hoca.jpg';
 import imgGul from '../assets/images/team/gul_hoca.jpg';
 import imgSeyma from '../assets/images/team/seyma_hoca.jpg';
+import imgMustafa from '../assets/images/team/mustafa_hoca.jpeg';
+import imgDerya from '../assets/images/team/derya_hoca.jpeg';
+import imgAyse from '../assets/images/team/ayse_hoca.jpeg';
+
 
 const getAcademicRank = (name) => {
   if (name.startsWith('Prof. Dr.')) return 0;
@@ -43,16 +47,16 @@ const teamData = {
     { id: 12, roleKey: 'instructor', name: 'Dr. Öğr. Ayşegül Karaahmetoğlu Çoban', titleKey: 'aysegul', image: null },
     { id: 13, roleKey: 'instructorP4C', name: 'Dr. Öğr. Burak Çakır', titleKey: 'burak', image: null },
     { id: 9, roleKey: 'instructor', name: 'Öğr. Üyesi Handan Kurtulmuş Sancak', titleKey: 'handan', image: imgHandan },
-    { id: 3, roleKey: 'instructor', name: 'Mustafa Sabur', titleKey: 'mustafa', image: null },
+    { id: 3, roleKey: 'instructor', name: 'Mustafa Sabur', titleKey: 'mustafa', image: imgMustafa },
     { id: 10, roleKey: 'instructor', name: 'Hülya Demirok Balaban', titleKey: 'hulya', image: imgHulya },
   ],
   guides: [
     { id: 11, roleKey: 'guide', name: 'Nazire Taşkın', titleKey: 'guide', image: imgNazire },
-    { id: 15, roleKey: 'guide', name: 'Derya Deniz Karameşe', titleKey: 'guide', image: null },
+    { id: 15, roleKey: 'guide', name: 'Derya Deniz Karameşe', titleKey: 'guide', image: imgDerya },
     { id: 16, roleKey: 'guide', name: 'Şeyma Yeşil', titleKey: 'guide', image: imgSeyma },
     { id: 17, roleKey: 'guide', name: 'Ertan Öz', titleKey: 'guide', image: imgErtan },
     { id: 18, roleKey: 'guide', name: 'Fadime Gül Ökten', titleKey: 'guide', image: imgGul },
-    { id: 19, roleKey: 'guide', name: 'Ayşe Altun', titleKey: 'guide', image: null },
+    { id: 19, roleKey: 'guide', name: 'Ayşe Altun', titleKey: 'guide', image: imgAyse },
     { id: 20, roleKey: 'guide', name: 'Bayram Gülcan', titleKey: 'guide', image: imgBayram },
     { id: 21, roleKey: 'guide', name: 'Enise Ulu Çoğalan', titleKey: 'guide', image: imgEnise },
     { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: imgFaysal },
