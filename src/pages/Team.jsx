@@ -20,6 +20,7 @@ import imgSeyma from '../assets/images/team/seyma_hoca.jpg';
 import imgMustafa from '../assets/images/team/mustafa_hoca.jpeg';
 import imgDerya from '../assets/images/team/derya_hoca.jpeg';
 import imgAyse from '../assets/images/team/ayse_hoca.jpeg';
+import imgArda from '../assets/images/team/arda_gonullu.jpeg';
 
 
 const getAcademicRank = (name) => {
@@ -66,11 +67,11 @@ const teamData = {
   ],
   volunteers: [
     { id: 101, roleKey: 'volunteer', name: 'İbrahim Benli', titleKey: 'student', image: null },
-    { id: 102, roleKey: 'volunteer', name: 'Arda Kıvrak', titleKey: 'student', image: null },
+    { id: 102, roleKey: 'volunteer', name: 'Arda Kıvrak', titleKey: 'student', image: imgArda },
     { id: 103, roleKey: 'volunteer', name: 'Mehmet Furkan Sakar', titleKey: 'student', image: null },
     { id: 104, roleKey: 'volunteer', name: 'Elif Baysal', titleKey: 'student', image: null },
     { id: 105, roleKey: 'volunteer', name: 'Aysu Büber', titleKey: 'student', image: null },
-    { id: 106, roleKey: 'volunteer', name: 'Azra Uzun', titleKey: 'student', image: null },
+    { id: 106, roleKey: 'volunteer', name: 'Zeynep Fenercioğlu', titleKey: 'student', image: null },
   ]
 };
 
