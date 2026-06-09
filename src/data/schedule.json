@@ -1,20 +1,20 @@
 [
   {
     "id": "1",
-    "name": "1. Etkinlik - Kayıt İşlemleri",
+    "name": "1.Etkinlik - Kayıt İşlemleri",
     "date": "29/06/2026",
     "time": "10:00 - 11:00",
     "instructor": "Kerim Burak Beyge",
-    "location": "Soma Bilim ve Sanat Merkezi",
+    "location": "SOMA BİLİM VE SANAT MERKEZİ",
     "description": "Yapılan seçim sonucunda asil olarak katılımcı listesinde olan katılımcıların kayıtlarının yapılması ve promosyon ürünlerin katılımcılara dağıtılması."
   },
   {
     "id": "2",
-    "name": "2. Etkinlik - Açılış Töreni",
+    "name": "2.Etkinlik - Açılış Töreni",
     "date": "29/06/2026",
     "time": "11:00 - 12:00",
     "instructor": "Doç. Dr. Taner Özcan",
-    "location": "Soma Bilim ve Sanat Merkezi",
+    "location": "SOMA BİLİM VE SANAT MERKEZİ",
     "description": "Açılış töreni ve proje hakkında detaylı bilgi verilmesi."
   },
   {
@@ -23,17 +23,17 @@
     "date": "29/06/2026",
     "time": "12:00 - 13:30",
     "instructor": "Proje Ekibi",
-    "location": "Soma Bilim ve Sanat Merkezi",
+    "location": "SOMA BİLİM VE SANAT MERKEZİ",
     "description": "Açılış töreninde bulunan tüm katılımcılar, eğitmenler ve rehberler ile birlikte öğle yemeği"
   },
   {
     "id": "4",
-    "name": "3. Etkinlik - Ölçeklerin Uygulanması",
+    "name": "3.Etkinlik - Ölçeklerin Uygulanması",
     "date": "29/06/2026",
     "time": "13:30 - 14:30",
     "instructor": "Kerim Burak Beyge",
-    "location": "Soma Bilim ve Sanat Merkezi",
-    "description": "Hazırlanan projenin öğrencilerde iklim değişikliği farkındalığı farklılığını ölçmek amacıyla 'İklim Değişikliği Farkındalığı' ölçeği katılımcılara uygulanması."
+    "location": "SOMA BİLİM VE SANAT MERKEZİ",
+    "description": "Hazırlanan projenin öğrencilerde iklim değişikliği farkındalığı farklılığını ölçmek amacıyla \"İklim Değişikliği Farkındalığı\" ölçeği katılımcılara uygulanması."
   },
   {
     "id": "5",
@@ -42,7 +42,7 @@
     "time": "15:30 - 17:00",
     "instructor": "Prof. Dr. Dilek Türker",
     "location": "Sevişler Baraj Gölü Eğitim Alanı",
-    "description": "Öğrencilere omurgasız canlılar hakkında genel bilgi verdikten sonra, iklim değişikliğinin kırmızı mercanlar üzerindeki etkilerini, bu mercanların ekosistemler için önemini, yaşam alanlarını ve korunmaları için alınması gereken tedbirleri anlatmak."
+    "description": "Öğrencilere omurgasız canlılar hakkında genel bilgi verdikten sonra, iklim değişikliğinin kırmızı mercanlar üzerindeki etkilerini, bu mercanların ekosistemler için önemini, yaşam alanlarını ve korunmaları için alınması gereken tedbirleri anlatmak. Deniz çayırlarını tanıtarak, iklim değişikliğinin bu hassas ekosistemler üzerindeki olumsuz etkilerini kavratmak ve koruma gerekliliklerini vurgulamak."
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "time": "17:00 - 18:30",
     "instructor": "Prof. Dr. Dilek Türker",
     "location": "Sevişler Baraj Gölü Eğitim Alanı",
-    "description": "Öğrencilere ülkemiz denizlerinde dağılım gösteren balık türlerini ve bu türlerin iklim değişikliği süreçlerindeki değişimlerini öğretmek."
+    "description": "Öğrencilere temel sistematik bilgisi, tür tanımı ve isimlendirme kuralları hakkında bilgi vermek; ülkemiz denizlerinde dağılım gösteren balık türlerini ve bu türlerin iklim değişikliği süreçlerindeki değişimlerini öğretmek. Tehlikeli türler hakkında güvenlik önlemlerini öğretirken, iklim değişikliği nedeniyle ortaya çıkan yeni tehlikeler ve bu durumların ekosistem üzerindeki etkilerini kavratmak."
   },
   {
     "id": "7",
@@ -59,8 +59,35 @@
     "date": "29/06/2026",
     "time": "19:00 - 20:00",
     "instructor": "Kerim Burak Beyge",
-    "location": "Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
     "description": "Tüm katılımcı öğrencilerinin ve refakatçi rehber öğretmenlerin odalara yerleşmesi"
+  },
+  {
+    "id": "8",
+    "name": "Akşam Yemeği",
+    "date": "29/06/2026",
+    "time": "20:00 - 21:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için akşam yemeği"
+  },
+  {
+    "id": "9",
+    "name": "Konaklama",
+    "date": "29/06/2026",
+    "time": "21:00 - 23:59",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberler için konaklama"
+  },
+  {
+    "id": "10",
+    "name": "Kahvaltı",
+    "date": "30/06/2026",
+    "time": "08:00 - 09:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm eğitmenler, rehberler ve katılımcıların sabah kahvaltısı"
   },
   {
     "id": "11",
@@ -69,25 +96,43 @@
     "time": "10:00 - 11:30",
     "instructor": "Mustafa Sabur",
     "location": "Kırkağaç Çam Korusu",
-    "description": "Öğrencilerin doğa ve müzik arasındaki ilişkiyi keşfetmelerini sağlamak."
+    "description": "Öğrencilerin doğa ve müzik arasındaki ilişkiyi keşfetmelerini ve yaratıcı düşünceyi teşvik ederken, öğrencilerin çevresel sorumluluk bilincini geliştirmeyi ve müzik aracılığıyla iklim değişikliği konusundaki farkındalıklarını artırmayı hedeflemektedir."
   },
   {
     "id": "12",
-    "name": "8. Etkinlik - Doğanın Fırçası: Bitkilerle Yün İplik Boyama",
+    "name": "8. Etkinlik - Doğanın Fırçası: Bitkilerle Yün İplik Boyama Deneyimi",
     "date": "30/06/2026",
     "time": "11:30 - 13:00",
     "instructor": "Prof. Dr. Selami Selvi",
     "location": "Kırkağaç Çam Korusu",
-    "description": "Bitkilerin doğal boyar madde içeriği hakkında farkındalık kazandırmak, bu maddelerin iplik, kumaş gibi materyallerin renklendirilmesinde kullanılabileceğini göstermek."
+    "description": "Ortaokul 7. sınıf öğrencilerine bitkilerin doğal boyar madde içeriği hakkında farkındalık kazandırmak, bu maddelerin iplik, kumaş gibi materyallerin renklendirilmesinde kullanılabileceğini göstermek ve doğal boyama yöntemlerinin çevre dostu ve sürdürülebilir bir alternatif olduğunu öğretmektir. Çevre dostu ve sürdürülebilir yöntemler iklim değişikliğiyle mücadelede katkı sağlayacağını anlamalarını sağlamaktır."
+  },
+  {
+    "id": "13",
+    "name": "Öğle Yemeği",
+    "date": "30/06/2026",
+    "time": "13:00 - 14:30",
+    "instructor": "Proje Ekibi",
+    "location": "Kırkağaç Çam Korusu",
+    "description": "Tüm eğitmenler, rehberler ve katılımcıların öğle yemeği"
   },
   {
     "id": "14",
     "name": "9. Etkinlik - Doğanın Gizemli Canlıları: Likenleri Keşfediyoruz",
     "date": "30/06/2026",
     "time": "14:30 - 16:00",
-    "instructor": "Handan Kurtulmuş Sancak",
+    "instructor": "Öğr. Üyesi Handan Kurtulmuş Sancak",
     "location": "Kırkağaç Çam Korusu",
-    "description": "Likenler hakkında farkındalık kazandırmak, ekosistemdeki katkılarını öğretmek."
+    "description": "Ortaokul 7. sınıf öğrencilerine doğada çok bilinmeyen likenler hakkında farkındalık kazandırmak, likenlerin ekosistemdeki katkısını öğretmektir.  İklim değişikliği hakkından biyomonitör olarakta kullanılan bu likenlerin çevre dostu ve sürdürülebilir yöntemler iklim değişikliğiyle mücadelede katkı sağlayacağını anlamalarını sağlamaktır."
+  },
+  {
+    "id": "15",
+    "name": "Ara Öğün",
+    "date": "30/06/2026",
+    "time": "16:00 - 16:30",
+    "instructor": "Proje Ekibi",
+    "location": "Kırkağaç Çam Korusu",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için ara öğün"
   },
   {
     "id": "16",
@@ -96,7 +141,7 @@
     "time": "16:30 - 18:00",
     "instructor": "Dr. Öğr. Sakin Vural Varlı",
     "location": "Kırkağaç Çam Korusu",
-    "description": "Katılımcıların doğa kaşifleri olarak bitki türlerini keşfetmeleri ve iklim değişikliğinin bitkiler üzerindeki etkilerini anlamaları."
+    "description": "Katılımcıların doğa kaşifleri olarak bitki türlerini keşfetmelerini sağlarken, iklim değişikliğinin bitki türlerinin yaşam alanları üzerindeki etkilerini anlamalarını ve bu konudaki farkındalıklarını artırmayı amaçlamaktadır. Ayrıca, türlerin önemini ve korunma durumlarını öğrenerek, doğa ve çevre bilincini geliştirmeyi ve iklim değişikliği ile mücadele konularında bilgi ve duyarlılık kazandırmayı amaçlamaktadır."
   },
   {
     "id": "17",
@@ -105,16 +150,43 @@
     "time": "18:00 - 19:30",
     "instructor": "Kerim Burak Beyge",
     "location": "Kırkağaç Çam Korusu",
-    "description": "Katılımcıların doğadan elde edilebilecek doğal renkleri keşfetmeleri ve sanatta kullanmaları."
+    "description": "Katılımcıların doğadan elde edilebilecek doğal renkleri keşfetmelerini, sıcak ve soğuk renklerin doğadaki örneklerini gözlemlemelerini ve bu renkleri sanatsal çalışmalarında kullanmalarını sağlayarak, doğa ve sanat arasındaki bağı anlamalarını amaçlamaktadır. Aynı zamanda, iklim değişikliği ve doğal kaynakların korunmasının önemini vurgulayarak, çevre bilinci ve sürdürülebilirlik konularında farkındalık kazandırmayı amaçlamaktadır."
+  },
+  {
+    "id": "18",
+    "name": "Akşam Yemeği",
+    "date": "30/06/2026",
+    "time": "20:00 - 21:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Katılımcıların doğadan elde edilebilecek doğal renkleri keşfetmelerini, sıcak ve soğuk renklerin doğadaki örneklerini gözlemlemelerini ve bu renkleri sanatsal çalışmalarında kullanmalarını sağlayarak, doğa ve sanat arasındaki bağı anlamalarını amaçlamaktadır. Aynı zamanda, iklim değişikliği ve doğal kaynakların korunmasının önemini vurgulayarak, çevre bilinci ve sürdürülebilirlik konularında farkındalık kazandırmayı amaçlamaktadır."
+  },
+  {
+    "id": "19",
+    "name": "Konaklama",
+    "date": "30/06/2026",
+    "time": "21:00 - 23:59",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberler için konaklama"
+  },
+  {
+    "id": "20",
+    "name": "Kahvaltı",
+    "date": "01/07/2026",
+    "time": "08:00 - 09:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberlerin kahvaltısı"
   },
   {
     "id": "21",
-    "name": "12. Etkinlik - Doğanın İzleri: Bitki Baskılı Seramik Atölyesi",
+    "name": "12. Etkinlik - Kim Dışkı Yiyor?",
     "date": "01/07/2026",
     "time": "10:00 - 11:30",
-    "instructor": "Hülya Demirok Balaban",
+    "instructor": "Dr. Nicklas Jansson",
     "location": "Kozak Yaylası",
-    "description": "Seramik sanatında bitki baskısı ve boyama tekniklerini öğrenmek."
+    "description": "Katılımcıların seramik sanatında bitki baskısı ve boyama tekniklerini öğrenmelerini, doğadan ilham alarak yaratıcılıklarını sergilemelerini ve doğa ile sanat arasındaki bağı keşfetmelerini amaçlamaktadır. Aynı zamanda, doğadan elde edilen malzemelerin sanatsal çalışmalarda kullanılmasının önemini vurgulayarak, katılımcıların çevresel farkındalıklarını artırmayı hedefler"
   },
   {
     "id": "22",
@@ -123,16 +195,34 @@
     "time": "11:30 - 13:00",
     "instructor": "Dr. Öğr. Burak Çakır",
     "location": "Kozak Yaylası",
-    "description": "P4C yaklaşımına uygun şekilde eleştirel düşünme becerilerinin felsefe atölyesinde geliştirilmesi."
+    "description": "Etkinlik Çocuklar için Felsefe (P4C) yaklaşımına uygun şekilde düzenlenecektir. Bu doğrultuda amaç, çocukların bir topluluk eşliğinde eleştirel, yaratıcı, özen gösterici ve iş birlikli düşünme becerilerini geliştirmektir."
+  },
+  {
+    "id": "23",
+    "name": "Öğle Yemeği",
+    "date": "01/07/2026",
+    "time": "13:00 - 14:30",
+    "instructor": "Proje Ekibi",
+    "location": "Kozak Yaylası",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için öğle yemeği"
   },
   {
     "id": "24",
-    "name": "14. Etkinlik - İklim İzleme Macerası: Hava Durumu",
+    "name": "14. Etkinlik - İklim İzleme Macerası: Hava Durumu ve İklim Değişikliği Atölyesi",
     "date": "01/07/2026",
     "time": "14:30 - 16:00",
     "instructor": "Prof. Dr. Hakan Önal",
     "location": "Kozak Yaylası",
-    "description": "Hava durumu verilerini toplama ve analiz etme becerilerini kazandırmak."
+    "description": "Katılımcılara hava durumu verilerini toplama ve analiz etme becerilerini kazandırmayı, farklı dönemlere ait verileri karşılaştırarak iklim değişikliğinin etkilerini gözlemlemelerini sağlamayı ve iklim parametrelerinin uzun vadeli değişikliklerini anlamalarına yardımcı olmayı amaçlamaktadır."
+  },
+  {
+    "id": "25",
+    "name": "Ara Öğün",
+    "date": "01/07/2026",
+    "time": "16:00 - 16:30",
+    "instructor": "Proje Ekibi",
+    "location": "Kozak Yaylası",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için ara öğün"
   },
   {
     "id": "26",
@@ -141,7 +231,34 @@
     "time": "16:30 - 18:00",
     "instructor": "Doç. Dr. Taner Özcan",
     "location": "Kozak Yaylası",
-    "description": "Farklı yükseltilerde bitki türlerini gözlemleyip iklim değişikliğinin etkilerini fark etmek."
+    "description": "Katılımcıların farklı yükseltilerde yetişen bitki türlerini gözlemlemelerini, bitki ekolojisi ve habitat farklarını anlamalarını sağlamayı amaçlarken, iklim değişikliğinin bu bitki türleri üzerindeki potansiyel etkilerini fark etmelerini ve bu konuda farkındalık kazanmalarını da amaçlamaktadır."
+  },
+  {
+    "id": "27",
+    "name": "Akşam Yemeği",
+    "date": "01/07/2026",
+    "time": "20:00 - 21:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için akşam yemeği"
+  },
+  {
+    "id": "28",
+    "name": "Konaklama",
+    "date": "01/07/2026",
+    "time": "21:00 - 23:59",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberler için konaklama"
+  },
+  {
+    "id": "29",
+    "name": "Kahvaltı",
+    "date": "02/07/2026",
+    "time": "08:00 - 09:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcı ve rehberler için sabah kahvaltısı"
   },
   {
     "id": "30",
@@ -149,35 +266,80 @@
     "date": "02/07/2026",
     "time": "10:00 - 11:30",
     "instructor": "Mustafa Sabur",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Doğadan elde edilen materyallerle ritim yaratmak."
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların doğadan elde edilen materyallerle ritim ve sesler yaratarak, doğanın çeşitliliğini ve her şeyin doğadan geldiğini anlamalarını; doğanın ritimlerini keşfederek doğal kaynakların sanatsal yaratımda nasıl kullanılabileceğini öğrenmelerini ve doğayla olan bağlarını güçlendirmelerini amaçlamaktadır."
   },
   {
     "id": "31",
-    "name": "17. Etkinlik - Kim Dışkı Yiyor?",
+    "name": "17. Etkinlik - Tozlaycılar Kimlerdir?",
     "date": "02/07/2026",
     "time": "11:30 - 13:00",
     "instructor": "Dr. Nicklas Jansson",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Gübre böceklerinin ekosistem içindeki kritik rolünü ve iklim sürecindeki önemini anlamak."
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların gübre böceklerinin ekosistem içindeki kritik rolünü ve iklim değişikliği sürecinde oynadıkları hayati önemi anlamalarını; gübre böceklerinin dışkıların ayrışmasında nasıl etkili olduklarını ve bu süreçlerin toprak sağlığı üzerindeki olumlu etkilerini keşfetmelerini; ve iklim değişikliğinin bu türlerin popülasyonları üzerindeki olası etkilerini gözlemleyerek çevresel farkındalıklarını artırmalarını amaçlamaktadır."
+  },
+  {
+    "id": "32",
+    "name": "Öğle Yemeği",
+    "date": "02/07/2026",
+    "time": "13:00 - 14:30",
+    "instructor": "Proje Ekibi",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Tüm eğitmenler, rehberler ve katılımcılar için öğle yemeği"
   },
   {
     "id": "33",
-    "name": "18. Etkinlik - Tozlayıcılar Kimlerdir?",
+    "name": "18. Etkinlik - Doğanın İzleri: Bitki Baskılı Seramik Atölyesi",
     "date": "02/07/2026",
     "time": "14:30 - 16:00",
-    "instructor": "Dr. Nicklas Jansson",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Tozlayıcı böceklerin ekosistem ve gıda üretimi için önemini anlamak ve yerinde gözlemlemek."
+    "instructor": "Hülya Demirok Balaban",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların tozlayıcı böceklerin ekosistemler ve gıda üretimi için kritik önemini anlamalarını sağlarken, iklim değişikliğinin bu böceklerin popülasyonları ve işlevleri üzerindeki etkilerini gözlemlemelerine ve farkındalık kazanmalarına; tozlayıcı böceklerin çeşitliliğini keşfederek, doğal dengeyi korumanın gerekliliğini ve doğanın hassas dengesine olan katkılarını öğrenmelerine yardımcı olmayı amaçlamaktadır."
+  },
+  {
+    "id": "34",
+    "name": "Ara Öğün",
+    "date": "02/07/2026",
+    "time": "16:00 - 16:30",
+    "instructor": "Proje Ekibi",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Tüm eğitmenler, katılımcılar ve rehberler için ara öğün"
   },
   {
     "id": "35",
-    "name": "19. Etkinlik - Habitatlar ve biyolojik çeşitlilik",
+    "name": "19. Etkinlik - Kuşlar için habitat gereksinimleri: Nerede ve neden?",
     "date": "02/07/2026",
     "time": "16:30 - 18:00",
-    "instructor": "Dr. Nicklas Jansson",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Farklı yaşam alanlarındaki biyolojik çeşitliliği gözlemlemek."
+    "instructor": "Prof. Dr. Kiraz Erciyas Yavuz",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların farklı yaşam alanlarındaki biyolojik çeşitliliği gözlemlemelerini, biyoçeşitliliğin ekosistem sağlığı için önemini anlamalarını ve iklim değişikliğinin bu çeşitlilik üzerindeki potansiyel etkilerini keşfederek çevresel farkındalıklarını artırmalarını amaçlamaktadır."
+  },
+  {
+    "id": "36",
+    "name": "Akşam Yemeği",
+    "date": "02/07/2026",
+    "time": "20:00 - 21:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm Katılımcılar ve rehberler için akşam yemeği"
+  },
+  {
+    "id": "37",
+    "name": "Konaklama",
+    "date": "02/07/2026",
+    "time": "21:00 - 23:59",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberler için konaklama"
+  },
+  {
+    "id": "38",
+    "name": "Kahvaltı",
+    "date": "03/07/2026",
+    "time": "08:00 - 09:00",
+    "instructor": "Proje Ekibi",
+    "location": "SOMA ALİ UZUNOĞLU ANADOLU İMAM HATİP LİSESİ PANSİYONU",
+    "description": "Tüm katılımcılar ve rehberler için sabah kahvaltısı"
   },
   {
     "id": "39",
@@ -185,26 +347,44 @@
     "date": "03/07/2026",
     "time": "10:00 - 11:30",
     "instructor": "Hülya Demirok Balaban",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Kuş evlerinin doğadaki kuşlar için önemini anlamak ve yapmak."
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların kuş evlerinin doğadaki kuşlar için önemini ve ekosistem içindeki rollerini anlamalarını; kuş evlerini tasarlayıp yaparak doğaya katkıda bulunmalarını; doğa sevgisini geliştirmelerini; ve çevresel sorumluluk bilinci kazanmalarını amaçlamaktadır."
   },
   {
     "id": "40",
-    "name": "21. Etkinlik - Kuş Dünyası ve İklim Araştırması",
+    "name": "21. Etkinlik - Kuş Dünyası ve İklim Araştırması: Kuşların Beslenme Tercihi",
     "date": "03/07/2026",
     "time": "11:30 - 13:00",
     "instructor": "Prof. Dr. Kiraz Erciyas Yavuz",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Farklı kuş türlerinin beslenme alışkanlıklarını ve ekosistem rollerini anlamak."
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların farklı kuş türlerinin beslenme alışkanlıklarını ve ekosistem içindeki rollerini anlamalarını; iklim değişikliğinin kuşların besin kaynakları üzerindeki potansiyel etkilerini keşfetmelerini; ve bu süreçte çevresel farkındalık ve doğa koruma bilinci kazanmalarını amaçlamaktadır."
+  },
+  {
+    "id": "41",
+    "name": "Öğle Yemeği",
+    "date": "03/07/2026",
+    "time": "13:00 - 14:30",
+    "instructor": "Proje Ekibi",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Tüm eğitmenler, katılımcılar ve rehberler için öğle yemeği"
   },
   {
     "id": "42",
-    "name": "22. Etkinlik - Kuşlar için habitat gereksinimleri",
+    "name": "22. Etkinlik - Habitatlar ve biyolojik çeşitlilik",
     "date": "03/07/2026",
     "time": "14:30 - 16:00",
-    "instructor": "Prof. Dr. Kiraz Erciyas Yavuz",
-    "location": "Spil Dağı Milli Parkı",
-    "description": "Doğru habitat gereksinimlerini kuşlar için incelemek."
+    "instructor": "Dr. Nicklas Jansson",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Katılımcıların farklı kuş türlerinin beslenme alışkanlıklarını ve ekosistem içindeki rollerini anlamalarını; iklim değişikliğinin kuşların besin kaynakları üzerindeki potansiyel etkilerini keşfetmelerini; ve bu süreçte çevresel farkındalık ve doğa koruma bilinci kazanmalarını amaçlamaktadır."
+  },
+  {
+    "id": "43",
+    "name": "Ara Öğün",
+    "date": "03/07/2026",
+    "time": "16:00 - 16:30",
+    "instructor": "Proje Ekibi",
+    "location": "Spil Dağ Milli Parkı",
+    "description": "Tüm eğitmenler, katılımcılar ve rehberler için ara öğün"
   },
   {
     "id": "44",
@@ -213,7 +393,7 @@
     "time": "16:30 - 18:00",
     "instructor": "Prof. Dr. Kiraz Erciyas Yavuz",
     "location": "Spil Dağ Milli Parkı",
-    "description": "Kuşları teşhis etmek ve ekosisteme olan katkılarını yerinde anlamak."
+    "description": "Katılımcıların kuşların ekosistemler üzerindeki katkılarını ve besin ağlarındaki rollerini anlamalarını; kuşları doğru bir şekilde tanımlama becerilerini geliştirmelerini; iklim değişikliğinin kuşların göç yolları ve yaşam alanları üzerindeki etkilerini keşfetmelerini; ve bu değişikliklerin ekosistem dinamiklerine nasıl yansıdığını değerlendirerek çevresel farkındalık ve doğa koruma bilinci kazanmalarını amaçlamaktadır."
   },
   {
     "id": "45",
@@ -221,8 +401,8 @@
     "date": "03/07/2026",
     "time": "19:30 - 20:30",
     "instructor": "Kerim Burak Beyge",
-    "location": "Soma Bilim ve Sanat Merkezi",
-    "description": "Sertifikaların dağıtımı."
+    "location": "SOMA BİLİM VE SANAT MERKEZİ",
+    "description": "Katılımcıların 5 günlük doğa kampı süresince edindikleri bilgi, beceri ve deneyimleri kutlamalarını; doğa ile kurdukları bağı pekiştirmelerini; ve kamp süresince gösterdikleri çaba ve başarıları takdir ederek, onlara sertifikalarını sunarak motivasyonlarını artırmayı amaçlamaktadır."
   },
   {
     "id": "46",
@@ -231,6 +411,6 @@
     "time": "20:30 - 21:30",
     "instructor": "Kerim Burak Beyge",
     "location": "Spil Dağ Milli Parkı",
-    "description": "Son testlerin uygulanarak doğa kampının sonlandırılması."
+    "description": "Katılımcıların 5 günlük doğa kampı süresince edindikleri bilgi, beceri ve deneyimleri kutlamalarını; doğa ile kurdukları bağı pekiştirmelerini; ve kamp süresince gösterdikleri çaba ve başarıları takdir ederek, onlara sertifikalarını sunarak motivasyonlarını artırmayı amaçlamaktadır."
   }
 ]
