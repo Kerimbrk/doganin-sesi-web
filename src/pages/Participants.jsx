@@ -43,8 +43,16 @@ const Participants = () => {
             })}
           </div>
 
+          <div className="pdf-viewer">
+            <iframe 
+              src={`${import.meta.env.BASE_URL}asil_ve_yedek_katilimci_listesi.pdf`}
+              title="Katılımcı Listesi PDF"
+              className="pdf-iframe"
+            />
+          </div>
+
           <div className="download-section">
-            <a href="/asil_ve_yedek_katilimci_listesi.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary btn-download-large">
+            <a href={`${import.meta.env.BASE_URL}asil_ve_yedek_katilimci_listesi.pdf`} target="_blank" rel="noopener noreferrer" className="btn-primary btn-download-large">
               <FileText size={20} />
               <span>{copy.participants.downloadButton}</span>
               <Download size={20} />
