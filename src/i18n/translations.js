@@ -14,7 +14,7 @@ export const translations = {
         program: 'Program',
         team: 'Ekibimiz',
         contact: 'İletişim',
-        application: 'Başvuru Yap',
+        participants: 'Katılımcı Listesi',
       },
       languageLabel: 'Dil seçimi',
       language: {
@@ -57,7 +57,7 @@ export const translations = {
       },
       highlights: ['36 öğrenci', '5 gün', '4 ekosistem'],
       actions: {
-        application: 'Başvuru Şartları',
+        participants: 'Katılımcı Listesi',
         program: 'Etkinlik Programı',
       },
       cards: [
@@ -72,9 +72,9 @@ export const translations = {
           cta: 'Takvimi Aç',
         },
         {
-          title: 'Başvuru ve Kayıt',
-          description: 'Katılım şartlarını öğrenin, belgeleri inceleyin ve başvuru formuna ulaşın.',
-          cta: 'Başvuruya Git',
+          title: 'Katılımcı Listesi',
+          description: 'Kampa katılmaya hak kazanan öğrencilerin listesini inceleyin.',
+          cta: 'Listeye Git',
         },
       ],
       feature: {
@@ -190,31 +190,20 @@ export const translations = {
         student: 'Öğrenci',
       },
     },
-    application: {
-      title: 'Başvuru Şartları ve Kayıt',
-      description: 'Doğanın Sesi kampına katılmak için gereken adımlar ve formlar',
-      criteriaTitle: 'Seçim Kriterleri',
-      criteria: [
-        'Manisa ilindeki devlet okullarında veya Soma BİLSEM\'de öğrenim gören 7. sınıf öğrencisi olmak.',
-        'Doğa, iklim değişikliği ve bilimsel çalışmalara ilgi duymak.',
-        'Kamp süresince gerçekleştirilecek açık alan ve doğa etkinliklerine sağlık engeli bulunmamak.',
+    participants: {
+      title: 'Asil ve Yedek Katılımcı Listesi',
+      subtitle: 'TÜBİTAK 4004 "Doğanın Sesi" Projesi Asil ve Yedek Katılımcı Listeleri Açıklandı!',
+      paragraphs: [
+        'TÜBİTAK 4004 Doğa Eğitimi ve Bilim Okulları Destekleme Programı kapsamında desteklenen "Doğanın Sesi: İklim Değişikliğini Anlamak ve Öğrenmek" başlıklı projemize göstermiş olduğunuz yoğun ilgi için teşekkür ederiz. Manisa ilinde öğrenim gören 6. ve 7. sınıf öğrencilerine yönelik olarak 29 Haziran – 3 Temmuz 2026 tarihleri arasında gerçekleştirilecek olan 5 günlük yatılı doğa kampımızın katılımcı değerlendirme süreci tamamlanmıştır. Başvurular, Katılımcı Seçim Komisyonumuz tarafından projemizin bilimsel hedefleri (köy okulu ve BİLSEM öğrencisi dengesi) doğrultusunda titizlikle incelenmiş olup, kampa katılmaya hak kazanan 36 kişilik Asil Katılımcı ve Yedek Katılımcı listeleri belirlenmiştir.',
+        'Önemli Bilgilendirmeler:',
+        'İletişim ve Onay: Asil listede yer alan katılımcılarımızla, kayıt onayı ve detaylı kamp bilgilendirmeleri için velilerinin belirttikleri iletişim kanalları (E-posta ve WhatsApp) üzerinden iletişime geçilmiştir.',
+        'Yedek Liste İşleyişi: Asil listeden herhangi bir mazeretle katılım sağlayamayacak öğrencilerin yerine, yedek listedeki sıraya göre katılımcılarımız ivedilikle kampa davet edilecektir.',
+        'Kayıt ve Açılış: Projemizin kayıt işlemleri 29 Haziran 2026 Pazartesi günü saat 08:30\'da Soma Bilim ve Sanat Merkezi\'nde gerçekleştirilecek olup, ardından saat 11:00\'de Açılış Törenimiz yapılacaktır.',
+        'Konaklama: Kamp süresince tüm katılımcılarımızın konaklama ve yemek hizmetleri Soma Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu\'nda sağlanacaktır.',
+        'Manisa ve İzmir\'in eşsiz doğasında (Spil Dağı Milli Parkı, Kozak Yaylası, Kırkağaç Çam Korusu ve Sevişler Baraj Gölü) uzman akademisyenlerimiz ve rehberlerimiz eşliğinde gerçekleşecek bu disiplinlerarası bilim yolculuğunda yer alacak geleceğin doğa elçilerini tebrik ederiz!',
+        'Aşağıdaki bağlantılardan Asil ve Yedek Katılımcılarımızın bulunduğu listeye ulaşabilirsiniz:'
       ],
-      documentsTitle: 'İndirilmesi Gereken Belgeler',
-      documentsDescription: 'Lütfen online başvuru formunu doldurmadan önce aşağıdaki belgeleri inceleyiniz. PDF dosyaları yayınlandığında bu alandan indirilebilecektir.',
-      documents: [
-        {
-          title: 'Veli İzin Belgesi',
-          description: 'Öğrencinin TÜBİTAK doğa eğitim kampına katılması için veli muvafakatnamesi / yasal vesayet formu.',
-        },
-        {
-          title: 'Diğer İzin Belgeleri',
-          description: 'KVKK aydınlatma metni, ses/görüntü kayıt izni ve alerji beyan formlarını içeren evrak paketi.',
-        },
-      ],
-      pdfSoon: 'PDF Yakında Eklenecek',
-      onlineTitle: 'Online Başvuru Formu',
-      onlineDescription: 'İzin belgeleriniz hazır olduğunda aşağıdaki butona tıklayarak resmi kaydınızı doğrudan Google Form üzerinden projemize iletebilirsiniz.',
-      onlineButton: 'Google Form ile Başvur',
+      downloadButton: 'Asil ve Yedek Katılımcı Listesi (PDF)'
     },
     contact: {
       kicker: 'Sorular, başvuru ve proje detayları',
@@ -247,7 +236,7 @@ export const translations = {
         program: 'Program',
         team: 'Our Team',
         contact: 'Contact',
-        application: 'Apply Now',
+        participants: 'Participant List',
       },
       languageLabel: 'Language selector',
       language: {
@@ -290,7 +279,7 @@ export const translations = {
       },
       highlights: ['36 students', '5 days', '4 ecosystems'],
       actions: {
-        application: 'Application Rules',
+        participants: 'Participant List',
         program: 'Program Schedule',
       },
       cards: [
@@ -305,9 +294,9 @@ export const translations = {
           cta: 'Open Schedule',
         },
         {
-          title: 'Application and Registration',
-          description: 'Learn the participation requirements, review documents, and reach the application form.',
-          cta: 'Go to Application',
+          title: 'Participant List',
+          description: 'View the list of students who are eligible to participate in the camp.',
+          cta: 'Go to List',
         },
       ],
       feature: {
@@ -423,31 +412,20 @@ export const translations = {
         student: 'Student',
       },
     },
-    application: {
-      title: 'Application Requirements and Registration',
-      description: 'Required steps and forms to join the Voice of Nature camp',
-      criteriaTitle: 'Selection Criteria',
-      criteria: [
-        'Be a 7th grade student studying in a public school in Manisa or at Soma BILSEM.',
-        'Have an interest in nature, climate change, and scientific studies.',
-        'Have no health barrier preventing participation in outdoor and field activities during the camp.',
+    participants: {
+      title: 'Main and Reserve Participant List',
+      subtitle: 'TUBITAK 4004 "Voice of Nature" Project Main and Reserve Participant Lists Announced!',
+      paragraphs: [
+        'Thank you for your intense interest in our project "Voice of Nature: Understanding and Learning Climate Change", supported within the scope of the TUBITAK 4004 Nature Education and Science Schools Support Program. The participant evaluation process of our 5-day residential nature camp, which will be held between June 29 - July 3, 2026 for 6th and 7th grade students studying in Manisa province, has been completed. The applications were meticulously examined by our Participant Selection Commission in line with the scientific objectives of our project (balance of village school and BILSEM students), and the lists of 36 Main Participants and Reserve Participants who are eligible to attend the camp have been determined.',
+        'Important Information:',
+        'Communication and Approval: Our main list participants have been contacted via the communication channels (E-mail and WhatsApp) specified by their parents for registration approval and detailed camp information.',
+        'Reserve List Process: In place of students who cannot participate from the main list with any excuse, our participants will be urgently invited to the camp according to the order in the reserve list.',
+        'Registration and Opening: Registration procedures for our project will be held on Monday, June 29, 2026 at 08:30 at the Soma Science and Art Center, followed by our Opening Ceremony at 11:00.',
+        'Accommodation: Accommodation and catering services for all our participants will be provided at the Soma Ali Uzunoğlu Anatolian Imam Hatip High School Hostel during the camp.',
+        'We congratulate the nature ambassadors of the future who will take part in this interdisciplinary scientific journey that will take place in the unique nature of Manisa and Izmir (Spil Mountain National Park, Kozak Plateau, Kirkagac Pine Grove and Sevisler Dam Lake) accompanied by our expert academics and guides!',
+        'You can access the list with our Main and Reserve Participants from the link below:'
       ],
-      documentsTitle: 'Documents to Review',
-      documentsDescription: 'Please review the documents below before filling in the online application form. PDF files will be available for download from this section once published.',
-      documents: [
-        {
-          title: 'Parental Consent Form',
-          description: 'Consent / legal guardian form required for a student to participate in the TUBITAK nature education camp.',
-        },
-        {
-          title: 'Additional Permission Documents',
-          description: 'A package including privacy notice, audio/video recording permission, and allergy declaration forms.',
-        },
-      ],
-      pdfSoon: 'PDF Coming Soon',
-      onlineTitle: 'Online Application Form',
-      onlineDescription: 'When your permission documents are ready, click the button below to submit your official registration directly through our Google Form.',
-      onlineButton: 'Apply via Google Form',
+      downloadButton: 'Main and Reserve Participant List (PDF)'
     },
     contact: {
       kicker: 'Questions, applications, and project details',

@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Program from './pages/Program';
 import About from './pages/About';
 import Team from './pages/Team';
-import Application from './pages/Application';
+import Participants from './pages/Participants';
 import Contact from './pages/Contact';
 import { LanguageProvider } from './context/LanguageContext';
 import { useLanguage } from './context/useLanguage';
@@ -22,7 +22,7 @@ const AppRoutes = () => {
           <Route path="/program" element={<Program />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/ekibimiz" element={<Team />} />
-          <Route path="/basvuru" element={<Application />} />
+          <Route path="/katilimcilar" element={<Participants />} />
           <Route path="/iletisim" element={<Contact />} />
           <Route path="*" element={<div style={{ padding: '100px', textAlign: 'center' }}><h2>{copy.app.comingSoon}</h2></div>} />
         </Routes>

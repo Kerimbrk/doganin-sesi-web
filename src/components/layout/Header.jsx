@@ -64,7 +64,7 @@ const Header = () => {
             <NavLink to="/program" className={getNavClassName}>{copy.header.nav.program}</NavLink>
             <NavLink to="/ekibimiz" className={getNavClassName}>{copy.header.nav.team}</NavLink>
             <NavLink to="/iletisim" className={getNavClassName}>{copy.header.nav.contact}</NavLink>
-            <NavLink to="/basvuru" className={({ isActive }) => `nav-link btn-primary${isActive ? ' active' : ''}`}>{copy.header.nav.application}</NavLink>
+            <NavLink to="/katilimcilar" className={({ isActive }) => `nav-link btn-primary${isActive ? ' active' : ''}`}>{copy.header.nav.participants}</NavLink>
           </nav>
 
           <div className="language-switcher" role="group" aria-label={copy.header.languageLabel}>

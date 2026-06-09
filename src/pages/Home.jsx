@@ -27,7 +27,7 @@ const Home = () => {
       title: copy.home.cards[2].title,
       description: copy.home.cards[2].description,
       icon: Users,
-      link: '/basvuru',
+      link: '/katilimcilar',
       cta: copy.home.cards[2].cta,
     },
   ];
@@ -96,7 +96,7 @@ const Home = () => {
               {copy.home.highlights.map((item) => <span key={item}>{item}</span>)}
             </div>
             <div className="hero-actions">
-              <Link to="/basvuru" className="btn-primary">{copy.home.actions.application}</Link>
+              <Link to="/katilimcilar" className="btn-primary">{copy.home.actions.participants}</Link>
               <Link to="/program" className="btn-secondary">{copy.home.actions.program}</Link>
             </div>
           </div>
