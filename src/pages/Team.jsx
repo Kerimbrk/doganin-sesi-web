@@ -21,6 +21,8 @@ import imgMustafa from '../assets/images/team/mustafa_hoca.jpeg';
 import imgDerya from '../assets/images/team/derya_hoca.jpeg';
 import imgAyse from '../assets/images/team/ayse_hoca.jpeg';
 import imgArda from '../assets/images/team/arda_gonullu.jpeg';
+import imgKiraz from '../assets/images/team/kiraz_hoca.jpeg';
+import imgBurak from '../assets/images/team/burak_cakir_hoca.jpeg';
 
 
 const getAcademicRank = (name) => {
@@ -45,8 +47,8 @@ const teamData = {
     { id: 14, roleKey: 'instructor', name: 'Doç. Dr. Taner Özcan', titleKey: 'tanerInstructor', image: imgTaner },
     { id: 5, roleKey: 'instructor', name: 'Dr. Nicklas Jansson', titleKey: 'nicklas', image: imgNicklas },
     { id: 7, roleKey: 'instructor', name: 'Dr. Öğr. Sakin Vural Varlı', titleKey: 'sakin', image: imgSakin },
-    { id: 12, roleKey: 'instructor', name: 'Prof. Dr. Kiraz Erciyas Yavuz', titleKey: 'kiraz', image: null },
-    { id: 13, roleKey: 'instructorP4C', name: 'Dr. Öğr. Burak Çakır', titleKey: 'burak', image: null },
+    { id: 12, roleKey: 'instructor', name: 'Prof. Dr. Kiraz Erciyas Yavuz', titleKey: 'kiraz', image: imgKiraz },
+    { id: 13, roleKey: 'instructorP4C', name: 'Dr. Öğr. Burak Çakır', titleKey: 'burak', image: imgBurak },
     { id: 9, roleKey: 'instructor', name: 'Öğr. Üyesi Handan Kurtulmuş Sancak', titleKey: 'handan', image: imgHandan },
     { id: 3, roleKey: 'instructor', name: 'Mustafa Sabur', titleKey: 'mustafa', image: imgMustafa },
     { id: 10, roleKey: 'instructor', name: 'Hülya Demirok Balaban', titleKey: 'hulya', image: imgHulya },
