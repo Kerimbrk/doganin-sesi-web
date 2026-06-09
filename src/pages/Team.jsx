@@ -45,7 +45,7 @@ const teamData = {
     { id: 14, roleKey: 'instructor', name: 'Doç. Dr. Taner Özcan', titleKey: 'tanerInstructor', image: imgTaner },
     { id: 5, roleKey: 'instructor', name: 'Dr. Nicklas Jansson', titleKey: 'nicklas', image: imgNicklas },
     { id: 7, roleKey: 'instructor', name: 'Dr. Öğr. Sakin Vural Varlı', titleKey: 'sakin', image: imgSakin },
-    { id: 12, roleKey: 'instructor', name: 'Dr. Öğr. Ayşegül Karaahmetoğlu Çoban', titleKey: 'aysegul', image: null },
+    { id: 12, roleKey: 'instructor', name: 'Prof. Dr. Kiraz Erciyas Yavuz', titleKey: 'kiraz', image: null },
     { id: 13, roleKey: 'instructorP4C', name: 'Dr. Öğr. Burak Çakır', titleKey: 'burak', image: null },
     { id: 9, roleKey: 'instructor', name: 'Öğr. Üyesi Handan Kurtulmuş Sancak', titleKey: 'handan', image: imgHandan },
     { id: 3, roleKey: 'instructor', name: 'Mustafa Sabur', titleKey: 'mustafa', image: imgMustafa },
