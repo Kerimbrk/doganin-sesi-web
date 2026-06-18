@@ -65,7 +65,7 @@ const teamData = {
     { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: imgFaysal },
   ],
   healthPersonnel: [
-    { id: 30, roleKey: 'health', name: 'Dr. Emre Tufan', titleKey: 'health', image: null },
+    { id: 30, roleKey: 'health', name: 'Dr. Utku Akkaynak', titleKey: 'health', image: null },
   ],
   volunteers: [
     { id: 101, roleKey: 'volunteer', name: 'İbrahim Benli', titleKey: 'student', image: null },
