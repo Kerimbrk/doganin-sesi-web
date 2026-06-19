@@ -7,6 +7,7 @@ import About from './pages/About';
 import Team from './pages/Team';
 import Participants from './pages/Participants';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import { LanguageProvider } from './context/LanguageContext';
 import { useLanguage } from './context/useLanguage';
 
@@ -15,6 +16,7 @@ const AppRoutes = () => {
 
   return (
     <div className="app-container">
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>
