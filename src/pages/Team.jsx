@@ -24,6 +24,10 @@ import imgArda from '../assets/images/team/arda_gonullu.jpeg';
 import imgKiraz from '../assets/images/team/kiraz_hoca.jpeg';
 import imgBurak from '../assets/images/team/burak_cakir_hoca.jpeg';
 import imgUtku from '../assets/images/team/utku_hoca.jpeg';
+import imgZeynep from '../assets/images/team/zeynep_fenercioglu.jpeg';
+import imgElif from '../assets/images/team/elif_baysal.jpeg';
+import imgAysu from '../assets/images/team/aysu_büber.jpeg';
+import imgMehmet from '../assets/images/team/mehmet_furkan.jpeg';
 const getAcademicRank = (name) => {
   if (name.startsWith('Prof. Dr.')) return 0;
   if (name.startsWith('Doç. Dr.')) return 1;
@@ -69,10 +73,10 @@ const teamData = {
   volunteers: [
     { id: 101, roleKey: 'volunteer', name: 'İbrahim Benli', titleKey: 'student', image: null },
     { id: 102, roleKey: 'volunteer', name: 'Arda Kıvrak', titleKey: 'student', image: imgArda },
-    { id: 103, roleKey: 'volunteer', name: 'Mehmet Furkan Sakar', titleKey: 'student', image: null },
-    { id: 104, roleKey: 'volunteer', name: 'Elif Baysal', titleKey: 'student', image: null },
-    { id: 105, roleKey: 'volunteer', name: 'Aysu Büber', titleKey: 'student', image: null },
-    { id: 106, roleKey: 'volunteer', name: 'Zeynep Fenercioğlu', titleKey: 'student', image: null },
+    { id: 103, roleKey: 'volunteer', name: 'Mehmet Furkan Sakar', titleKey: 'student', image: imgMehmet },
+    { id: 104, roleKey: 'volunteer', name: 'Elif Baysal', titleKey: 'student', image: imgElif },
+    { id: 105, roleKey: 'volunteer', name: 'Aysu Büber', titleKey: 'student', image: imgAysu },
+    { id: 106, roleKey: 'volunteer', name: 'Zeynep Fenercioğlu', titleKey: 'student', image: imgZeynep },
   ]
 };
 
