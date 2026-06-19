@@ -26,7 +26,7 @@ import imgBurak from '../assets/images/team/burak_cakir_hoca.jpeg';
 import imgUtku from '../assets/images/team/utku_hoca.jpeg';
 import imgZeynep from '../assets/images/team/zeynep_fenercioglu.jpeg';
 import imgElif from '../assets/images/team/elif_baysal.jpeg';
-import imgAysu from '../assets/images/team/aysu_büber.jpeg';
+import imgAysu from '../assets/images/team/aysu_buber.jpeg';
 import imgMehmet from '../assets/images/team/mehmet_furkan.jpeg';
 const getAcademicRank = (name) => {
   if (name.startsWith('Prof. Dr.')) return 0;
