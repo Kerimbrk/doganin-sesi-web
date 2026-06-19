@@ -23,8 +23,7 @@ import imgAyse from '../assets/images/team/ayse_hoca.jpeg';
 import imgArda from '../assets/images/team/arda_gonullu.jpeg';
 import imgKiraz from '../assets/images/team/kiraz_hoca.jpeg';
 import imgBurak from '../assets/images/team/burak_cakir_hoca.jpeg';
-
-
+import imgUtku from '../assets/images/team/utku_hoca.jpeg';
 const getAcademicRank = (name) => {
   if (name.startsWith('Prof. Dr.')) return 0;
   if (name.startsWith('Doç. Dr.')) return 1;
@@ -65,7 +64,7 @@ const teamData = {
     { id: 22, roleKey: 'guide', name: 'Faysal Sayan', titleKey: 'guide', image: imgFaysal },
   ],
   healthPersonnel: [
-    { id: 30, roleKey: 'health', name: 'Dr. Utku Akkaynak', titleKey: 'health', image: null },
+    { id: 30, roleKey: 'health', name: 'Dr. Utku Akkaynak', titleKey: 'health', image: imgUtku },
   ],
   volunteers: [
     { id: 101, roleKey: 'volunteer', name: 'İbrahim Benli', titleKey: 'student', image: null },
