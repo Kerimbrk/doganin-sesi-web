@@ -201,9 +201,9 @@ export const translations = {
         'Kayıt ve Açılış: Projemizin kayıt işlemleri 29 Haziran 2026 Pazartesi günü saat 08:30\'da Soma Bilim ve Sanat Merkezi\'nde gerçekleştirilecek olup, ardından saat 11:00\'de Açılış Törenimiz yapılacaktır.',
         'Konaklama: Kamp süresince tüm katılımcılarımızın konaklama ve yemek hizmetleri Soma Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu\'nda sağlanacaktır.',
         'Manisa ve İzmir\'in eşsiz doğasında (Spil Dağı Milli Parkı, Kozak Yaylası, Kırkağaç Çam Korusu ve Sevişler Baraj Gölü) uzman akademisyenlerimiz ve rehberlerimiz eşliğinde gerçekleşecek bu disiplinlerarası bilim yolculuğunda yer alacak geleceğin doğa elçilerini tebrik ederiz!',
-        'Aşağıdaki bağlantılardan Asil ve Yedek Katılımcılarımızın bulunduğu listeye ulaşabilirsiniz:'
+        'Asil Katılımcı Listesinde yer almasına rağmen çeşitli sebeplerle projede yer almak istemeyen öğrencilerin çıkarılması ve yedek listede yer alan öğrencilerin listeye dahil edilmesi ile oluşan nihai liste buradadır:'
       ],
-      downloadButton: 'Asil ve Yedek Katılımcı Listesi (PDF)',
+      downloadButton: 'Nihai Katılımcı Listesi (PDF)',
       downloadConsentButton: 'Muvafakatname İndir (Word)'
     },
     contact: {
@@ -424,9 +424,9 @@ export const translations = {
         'Registration and Opening: Registration procedures for our project will be held on Monday, June 29, 2026 at 08:30 at the Soma Science and Art Center, followed by our Opening Ceremony at 11:00.',
         'Accommodation: Accommodation and catering services for all our participants will be provided at the Soma Ali Uzunoğlu Anatolian Imam Hatip High School Hostel during the camp.',
         'We congratulate the nature ambassadors of the future who will take part in this interdisciplinary scientific journey that will take place in the unique nature of Manisa and Izmir (Spil Mountain National Park, Kozak Plateau, Kirkagac Pine Grove and Sevisler Dam Lake) accompanied by our expert academics and guides!',
-        'You can access the list with our Main and Reserve Participants from the link below:'
+        'The final list, created by removing students from the main list who were unable to attend and including students from the reserve list, is available below:'
       ],
-      downloadButton: 'Main and Reserve Participant List (PDF)',
+      downloadButton: 'Final Participant List (PDF)',
       downloadConsentButton: 'Download Consent Form (Word)'
     },
     contact: {
