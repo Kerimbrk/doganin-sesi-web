@@ -18,7 +18,9 @@ const Participants = () => {
           <div className="paragraphs-wrapper">
             {copy.participants.paragraphs.map((paragraph, index) => {
               // Highlight bold parts for known keywords
-              if (paragraph.startsWith('Önemli Bilgilendirmeler:') ||
+              if (paragraph.startsWith('DUYURU:') ||
+                  paragraph.startsWith('ANNOUNCEMENT:') ||
+                  paragraph.startsWith('Önemli Bilgilendirmeler:') ||
                   paragraph.startsWith('İletişim ve Onay:') ||
                   paragraph.startsWith('Yedek Liste İşleyişi:') ||
                   paragraph.startsWith('Kayıt ve Açılış:') ||

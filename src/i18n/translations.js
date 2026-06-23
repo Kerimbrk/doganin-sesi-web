@@ -201,7 +201,7 @@ export const translations = {
         'Kayıt ve Açılış: Projemizin kayıt işlemleri 29 Haziran 2026 Pazartesi günü saat 08:30\'da Soma Bilim ve Sanat Merkezi\'nde gerçekleştirilecek olup, ardından saat 11:00\'de Açılış Törenimiz yapılacaktır.',
         'Konaklama: Kamp süresince tüm katılımcılarımızın konaklama ve yemek hizmetleri Soma Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu\'nda sağlanacaktır.',
         'Manisa ve İzmir\'in eşsiz doğasında (Spil Dağı Milli Parkı, Kozak Yaylası, Kırkağaç Çam Korusu ve Sevişler Baraj Gölü) uzman akademisyenlerimiz ve rehberlerimiz eşliğinde gerçekleşecek bu disiplinlerarası bilim yolculuğunda yer alacak geleceğin doğa elçilerini tebrik ederiz!',
-        'TÜBİTAK 4004 \'Doğanın Sesi\' projemiz için daha önce ilan edilen asil listede yer alan, ancak çeşitli mazeretleri dolayısıyla katılım sağlayamayacağını bildiren öğrencilerimizin yerine yedek listedeki öğrencilerimizin dâhil edilmesiyle oluşturulan Nihai Katılımcı Listesi aşağıdadır.'
+        'DUYURU: TÜBİTAK 4004 \'Doğanın Sesi\' projemiz için daha önce ilan edilen asil listede yer alan, ancak çeşitli mazeretleri dolayısıyla katılım sağlayamayacağını bildiren öğrencilerimizin yerine yedek listedeki öğrencilerimizin dâhil edilmesiyle oluşturulan Nihai Katılımcı Listesi aşağıdadır.'
       ],
       downloadButton: 'Nihai Katılımcı Listesi (PDF)',
       downloadConsentButton: 'Muvafakatname İndir (Word)'
@@ -424,7 +424,7 @@ export const translations = {
         'Registration and Opening: Registration procedures for our project will be held on Monday, June 29, 2026 at 08:30 at the Soma Science and Art Center, followed by our Opening Ceremony at 11:00.',
         'Accommodation: Accommodation and catering services for all our participants will be provided at the Soma Ali Uzunoğlu Anatolian Imam Hatip High School Hostel during the camp.',
         'We congratulate the nature ambassadors of the future who will take part in this interdisciplinary scientific journey that will take place in the unique nature of Manisa and Izmir (Spil Mountain National Park, Kozak Plateau, Kirkagac Pine Grove and Sevisler Dam Lake) accompanied by our expert academics and guides!',
-        'Below is the Final Participant List, which has been created by including the students from the reserve list in place of the students who were previously announced in the main list for our TUBITAK 4004 \'Voice of Nature\' project but informed us that they will not be able to attend due to various excuses.'
+        'ANNOUNCEMENT: Below is the Final Participant List, which has been created by including the students from the reserve list in place of the students who were previously announced in the main list for our TUBITAK 4004 \'Voice of Nature\' project but informed us that they will not be able to attend due to various excuses.'
       ],
       downloadButton: 'Final Participant List (PDF)',
       downloadConsentButton: 'Download Consent Form (Word)'
