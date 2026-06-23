@@ -203,7 +203,8 @@ export const translations = {
         'Manisa ve İzmir\'in eşsiz doğasında (Spil Dağı Milli Parkı, Kozak Yaylası, Kırkağaç Çam Korusu ve Sevişler Baraj Gölü) uzman akademisyenlerimiz ve rehberlerimiz eşliğinde gerçekleşecek bu disiplinlerarası bilim yolculuğunda yer alacak geleceğin doğa elçilerini tebrik ederiz!',
         'Aşağıdaki bağlantılardan Asil ve Yedek Katılımcılarımızın bulunduğu listeye ulaşabilirsiniz:'
       ],
-      downloadButton: 'Asil ve Yedek Katılımcı Listesi (PDF)'
+      downloadButton: 'Asil ve Yedek Katılımcı Listesi (PDF)',
+      downloadConsentButton: 'Muvafakatname İndir (Word)'
     },
     contact: {
       kicker: 'Sorular, başvuru ve proje detayları',
@@ -425,7 +426,8 @@ export const translations = {
         'We congratulate the nature ambassadors of the future who will take part in this interdisciplinary scientific journey that will take place in the unique nature of Manisa and Izmir (Spil Mountain National Park, Kozak Plateau, Kirkagac Pine Grove and Sevisler Dam Lake) accompanied by our expert academics and guides!',
         'You can access the list with our Main and Reserve Participants from the link below:'
       ],
-      downloadButton: 'Main and Reserve Participant List (PDF)'
+      downloadButton: 'Main and Reserve Participant List (PDF)',
+      downloadConsentButton: 'Download Consent Form (Word)'
     },
     contact: {
       kicker: 'Questions, applications, and project details',

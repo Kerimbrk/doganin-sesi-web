@@ -57,6 +57,11 @@ const Participants = () => {
               <span>{copy.participants.downloadButton}</span>
               <Download size={20} />
             </a>
+            <a href={`${import.meta.env.BASE_URL}muvafakatname.docx`} download className="btn-download-secondary">
+              <FileText size={20} />
+              <span>{copy.participants.downloadConsentButton}</span>
+              <Download size={20} />
+            </a>
           </div>
         </section>
       </div>
