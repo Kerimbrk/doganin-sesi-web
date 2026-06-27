@@ -5,6 +5,21 @@ import { useLanguage } from '../context/useLanguage';
 const CampInfo = () => {
   const { copy } = useLanguage();
 
+  const roomCards = [
+    'atesbocegi.png',
+    'bulbul.png',
+    'cam_korusu.png',
+    'defne.png',
+    'iklim.png',
+    'karaca.png',
+    'kartal.png',
+    'kelebek.png',
+    'manisa_lalesi.png',
+    'mercan.png',
+    'yayla.png',
+    'yilki_ati.png'
+  ];
+
   return (
     <div className="camp-info-page">
       <div className="app-header">
@@ -31,6 +46,21 @@ const CampInfo = () => {
               <span>{copy.campInfo.downloadRoomPlan}</span>
               <Download size={20} />
             </a>
+          </div>
+        </section>
+
+        <section className="room-cards-section">
+          <h2 className="content-subtitle">{copy.campInfo.roomCardsTitle}</h2>
+          <div className="room-cards-grid">
+            {roomCards.map((card, index) => (
+              <div key={index} className="room-card glass-panel">
+                <img 
+                  src={`${import.meta.env.BASE_URL}rooms/${card}`} 
+                  alt={`Oda Bilgi Kartı ${index + 1}`} 
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </div>

@@ -227,7 +227,8 @@ export const translations = {
       subtitle: 'Konaklama ve Yemek Programı',
       description: 'TÜBİTAK 4004 \'Doğanın Sesi\' projemiz kapsamındaki 5 günlük kamp süresince katılımcılarımızın konforu, güvenliği ve sağlıklı beslenmesi önceliğimizdir. Bu doğrultuda hazırlanan kamp yemek menüsü ile Soma Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu\'ndaki konaklama oda planlarına aşağıdan ulaşabilirsiniz.',
       downloadRoomPlan: 'Oda Planını Görüntüle (PDF)',
-      downloadMealMenu: 'Yemek Menüsünü Görüntüle (PDF)'
+      downloadMealMenu: 'Yemek Menüsünü Görüntüle (PDF)',
+      roomCardsTitle: 'Oda Bilgi Kartları'
     },
   },
   en: {
@@ -458,7 +459,8 @@ export const translations = {
       subtitle: 'Accommodation and Meal Schedule',
       description: 'During the 5-day camp of our TUBITAK 4004 \'Voice of Nature\' project, the comfort, safety, and healthy nutrition of our participants are our priorities. You can access the camp meal menu prepared accordingly and the accommodation room plans at the Soma Ali Uzunoğlu Anatolian Imam Hatip High School Hostel below.',
       downloadRoomPlan: 'View Room Plan (PDF)',
-      downloadMealMenu: 'View Meal Menu (PDF)'
+      downloadMealMenu: 'View Meal Menu (PDF)',
+      roomCardsTitle: 'Room Information Cards'
     },
   },
 };
