@@ -15,6 +15,7 @@ export const translations = {
         team: 'Ekibimiz',
         contact: 'İletişim',
         participants: 'Katılımcı Listesi',
+        campInfo: 'Kamp Bilgileri',
       },
       languageLabel: 'Dil seçimi',
       language: {
@@ -221,6 +222,13 @@ export const translations = {
       mapTitle: 'Soma Bilim ve Sanat Merkezi',
       mapFrameTitle: 'Turgutalp Mah. Geyik Sk. No52 Soma / Manisa Konumu',
     },
+    campInfo: {
+      title: 'Kamp Bilgileri',
+      subtitle: 'Konaklama ve Yemek Programı',
+      description: 'TÜBİTAK 4004 \'Doğanın Sesi\' projemiz kapsamındaki 5 günlük kamp süresince katılımcılarımızın konforu, güvenliği ve sağlıklı beslenmesi önceliğimizdir. Bu doğrultuda hazırlanan kamp yemek menüsü ile Soma Ali Uzunoğlu Anadolu İmam Hatip Lisesi Pansiyonu\'ndaki konaklama oda planlarına aşağıdan ulaşabilirsiniz.',
+      downloadRoomPlan: 'Oda Planını Görüntüle (PDF)',
+      downloadMealMenu: 'Yemek Menüsünü Görüntüle (PDF)'
+    },
   },
   en: {
     locale: 'en-US',
@@ -238,6 +246,7 @@ export const translations = {
         team: 'Our Team',
         contact: 'Contact',
         participants: 'Participant List',
+        campInfo: 'Camp Information',
       },
       languageLabel: 'Language selector',
       language: {
@@ -443,6 +452,13 @@ export const translations = {
       mapCaption: 'Project Hub',
       mapTitle: 'Soma Science and Art Center',
       mapFrameTitle: 'Location of Turgutalp Neighborhood Geyik Street No 52 Soma Manisa',
+    },
+    campInfo: {
+      title: 'Camp Information',
+      subtitle: 'Accommodation and Meal Schedule',
+      description: 'During the 5-day camp of our TUBITAK 4004 \'Voice of Nature\' project, the comfort, safety, and healthy nutrition of our participants are our priorities. You can access the camp meal menu prepared accordingly and the accommodation room plans at the Soma Ali Uzunoğlu Anatolian Imam Hatip High School Hostel below.',
+      downloadRoomPlan: 'View Room Plan (PDF)',
+      downloadMealMenu: 'View Meal Menu (PDF)'
     },
   },
 };

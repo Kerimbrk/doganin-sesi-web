@@ -1,0 +1,110 @@
+.camp-info-page {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.camp-info-content {
+  margin-top: 3rem;
+}
+
+/* Base styles are shared with Participants.css for consistency */
+/* Since they use the same classes like text-content, content-subtitle, we can rely on index.css or recreate specifics if needed. We'll reuse the exact same classes so it matches perfectly. */
+
+.camp-info-page .text-content {
+  padding: 3rem;
+}
+
+.camp-info-page .content-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-primary-light);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.camp-info-page .paragraphs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.camp-info-page .download-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.camp-info-page .btn-download-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.camp-info-page .btn-download-large:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.camp-info-page .btn-download-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.camp-info-page .btn-download-secondary:hover {
+  background-color: var(--color-secondary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .camp-info-page {
+    padding: 2rem 1rem;
+  }
+  
+  .camp-info-page .text-content {
+    padding: 1.5rem;
+  }
+  
+  .camp-info-page .content-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .camp-info-page .paragraphs-wrapper {
+    font-size: 1rem;
+  }
+  
+  .camp-info-page .btn-download-large,
+  .camp-info-page .btn-download-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

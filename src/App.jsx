@@ -7,6 +7,7 @@ import About from './pages/About';
 import Team from './pages/Team';
 import Participants from './pages/Participants';
 import Contact from './pages/Contact';
+import CampInfo from './pages/CampInfo';
 import ScrollToTop from './components/ScrollToTop';
 import { LanguageProvider } from './context/LanguageContext';
 import { useLanguage } from './context/useLanguage';
@@ -26,6 +27,7 @@ const AppRoutes = () => {
           <Route path="/ekibimiz" element={<Team />} />
           <Route path="/katilimcilar" element={<Participants />} />
           <Route path="/iletisim" element={<Contact />} />
+          <Route path="/kamp-bilgileri" element={<CampInfo />} />
           <Route path="*" element={<div style={{ padding: '100px', textAlign: 'center' }}><h2>{copy.app.comingSoon}</h2></div>} />
         </Routes>
       </main>
